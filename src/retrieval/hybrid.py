@@ -37,6 +37,8 @@ class HybridRetriever(DenseRetriever):
             raise ValueError("Search top_k must be in 1..100")
         if self.index.configuration.text_field is None:
             raise AdapterUnavailable("Hybrid search unavailable: index has no full-text field.")
-        dense = super().search(query, min(100, max(20, top_k)), equipment_id)
-        lexical = self.index.lexical_search(query, min(100, max(20, top_k)), equipment_id)
-        return fuse_hits(dense, lexical, top_k)
+        from src.adapters.langchain_retrieval import search_with_langchain
+        from src.schemas import DiagnosisRequest
+
+        request = DiagnosisRequest(query=query, equipment_id=equipment_id)
+        return search_with_langchain(self.embedder, self.index, request.query, top_k, equipment_id, "hybrid")

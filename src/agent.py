@@ -6,6 +6,7 @@ from typing import Literal
 
 from src.adapters.contracts import GraphAdapter, RetrievalAdapter
 from src.adapters.diagnosis_contracts import SQLEvidenceAdapter
+from src.adapters.langchain_evidence import graph_paths_tool, sql_evidence_tool
 from src.agent_models import AgentRun, ExplanationAdapter
 from src.data_models import Dataset
 from src.diagnosis import GroundingError, prepare_facts, validated_answer
@@ -63,14 +64,14 @@ class DiagnosisAgent:
                 evidence: list[Evidence] = []
                 if decision.route == "sql":
                     tools.append("sql_exact")
-                    evidence.extend(self.sql.retrieve(scoped))
+                    evidence.extend(sql_evidence_tool(self.sql, scoped))
                 if decision.route in ("graph", "combined"):
                     if self.graph is None:
                         raise GroundingError("Graph adapter unavailable.")
                     tools.append("graph_paths")
                     codes = (alarm.code,) if alarm else tuple(a.code for a in self.data.alarms if a.equipment_id == eq)
                     for code in codes:
-                        paths = self.graph.alarm_paths(code, eq)
+                        paths = graph_paths_tool(self.graph, code, eq)
                         expected_alarm = next(a for a in self.data.alarms if a.code == code)
                         mode = next(m for m in self.data.failure_modes if m.failure_mode_id == expected_alarm.failure_mode_id)
                         for path in paths:

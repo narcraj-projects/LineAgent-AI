@@ -18,3 +18,9 @@ PyMuPDF==1.26.3
 # Local typed API for the React dashboard.
 fastapi==0.143.3
 uvicorn==0.54.0
+
+# LangChain handles verified documents, section splitting, vector ingestion,
+# retrieval and the Fireworks generation chain. No LangGraph dependency.
+langchain-core==1.6.12
+langchain-fireworks==1.7.1
+langchain-text-splitters==1.1.3

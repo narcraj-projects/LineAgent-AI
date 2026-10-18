@@ -71,6 +71,9 @@ class SyntheticPDFAdapter:
                     body = text.split(BEGIN, 1)[1].split(END, 1)[0].strip()
                     if not body or len(body) > 2000 or body != normalize_text(section.text):
                         raise PDFParsingError("Extracted PDF section differs from canonical synthetic text")
+                    from src.adapters.langchain_documents import split_verified_section
+
+                    body = split_verified_section(body, section.section_id)
                     # This text is actually extracted from the PDF. Canonical
                     # JSON supplies only verified structural metadata and labels.
                     parsed = ManualSection.model_validate({**section.model_dump(), "text": body})

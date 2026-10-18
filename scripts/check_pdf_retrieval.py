@@ -10,7 +10,7 @@ from src.adapters.search_settings import load_search_settings
 from src.retrieval.corpus import build_corpus, load_dataset
 from src.retrieval.live import open_live_retrieval
 from src.retrieval.metrics import EXACT_CASES, recall_at_5, relevant_source_ids
-from src.retrieval.pdf_metadata import build_pdf_metadata, pdf_namespace_tag
+from src.retrieval.pdf_metadata import build_pdf_metadata, langchain_pdf_namespace_tag
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -20,7 +20,7 @@ def main() -> int:
     documents = build_corpus(parsed.dataset)
     metadata = build_pdf_metadata(parsed)
     live = open_live_retrieval(load_search_settings(ROOT / ".env"), documents,
-        namespace_tag=pdf_namespace_tag(parsed.manifest), source_metadata=metadata)
+        namespace_tag=langchain_pdf_namespace_tag(parsed.manifest), source_metadata=metadata)
     output = ROOT / "evals/results" / datetime.now(timezone.utc).strftime("pdf-exact-recall-%Y%m%dT%H%M%S%fZ.json")
     records = []
     try:

@@ -30,7 +30,7 @@ def grounded():
 
 def response_body(facts):
     return {"model": MODEL, "choices": [{"finish_reason": "stop", "message": {
-        "content": Explanation(facts=facts).model_dump_json()}}]}
+        "role": "assistant", "content": Explanation(facts=facts).model_dump_json()}}]}
 
 
 def test_documented_json_schema_request_and_strict_parse(grounded):
@@ -101,5 +101,47 @@ def test_valid_json_but_fabricated_rate_is_refused_end_to_end(grounded):
     try:
         run = DiagnosisAgent(data, sql, adapter).run(request)
         assert run.response.status == "refused" and not run.response.candidates
+    finally:
+        adapter.close()
+
+@pytest.mark.parametrize("alteration", ["refusal", "function_call", "role", "content_blocks"])
+def test_langchain_does_not_normalize_away_invalid_provider_envelopes(grounded, alteration):
+    _, _, _, facts, sources = grounded
+    def handler(request):
+        body = response_body(facts)
+        message = body["choices"][0]["message"]
+        if alteration == "refusal":
+            message["refusal"] = "secret-from-provider"
+        elif alteration == "function_call":
+            message["function_call"] = {"name":"unsafe_query"}
+        elif alteration == "role":
+            message["role"] = "user"
+        else:
+            message["content"] = [{"type":"text","text":message["content"]}]
+        return httpx.Response(200,json=body)
+    adapter = FireworksExplanationAdapter("fake-test-key",MODEL,
+        client=httpx.Client(transport=httpx.MockTransport(handler)))
+    try:
+        with pytest.raises(AdapterUnavailable) as error:
+            adapter.explain(facts,sources)
+        assert "secret-from-provider" not in str(error.value)
+    finally:
+        adapter.close()
+
+
+def test_langchain_preserves_a_single_call_and_disables_automatic_tracing(grounded, monkeypatch):
+    _, _, _, facts, sources = grounded
+    monkeypatch.setenv("LANGSMITH_TRACING","true")
+    calls = []
+    def handler(request):
+        calls.append(request)
+        return httpx.Response(200,json=response_body(facts))
+    adapter = FireworksExplanationAdapter("fake-test-key",MODEL,
+        client=httpx.Client(transport=httpx.MockTransport(handler)))
+    try:
+        assert adapter.explain(facts,sources).facts == facts
+        assert len(calls) == 1
+        assert adapter._chat.max_retries == 0
+        assert "langchain" in adapter.provider
     finally:
         adapter.close()

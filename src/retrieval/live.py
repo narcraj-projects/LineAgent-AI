@@ -17,6 +17,8 @@ from src.pdf_models import RAGSourceMetadata
 class LiveRetrieval:
     index: PineconeDocumentAdapter
     embedder: FireworksEmbeddingAdapter
+    documents: tuple[CorpusDocument, ...]
+    source_metadata: dict[str, RAGSourceMetadata] | None = None
 
     @property
     def dense(self) -> DenseRetriever:
@@ -27,7 +29,10 @@ class LiveRetrieval:
         return HybridRetriever(self.embedder, self.index)
 
     def index_documents(self) -> int:
-        count = self.index.upsert(self.embedder)
+        from src.adapters.langchain_retrieval import ingest_with_langchain
+
+        count = ingest_with_langchain(self.embedder, self.index, self.documents,
+            self.source_metadata, self.index.upsert)
         for attempt in range(6):
             try:
                 self.index.verify_visible()
@@ -58,14 +63,14 @@ def open_live_retrieval(settings: SearchSettings, documents: tuple[CorpusDocumen
             embedder.close()
 
     index = PineconeDocumentAdapter.connect(settings, documents, new_dimension if create_index else None, probe,
-        namespace_tag=namespace_tag, source_metadata=source_metadata)
+        namespace_tag=namespace_tag or 'lc-v1', source_metadata=source_metadata)
     embedder = None
     try:
         if index.configuration.text_field is None:
             raise IndexCompatibilityError("Existing index has no full-text field; dense+hybrid workflow requires a new compatible index. Existing schema was not changed.")
         embedder = FireworksEmbeddingAdapter(settings.fireworks_api_key.get_secret_value(), settings.embedding_model, index.configuration.dimension, settings.ca_file)
         embedder.embed(("Synthetic query compatibility probe.",), "query")
-        return LiveRetrieval(index=index, embedder=embedder)
+        return LiveRetrieval(index=index, embedder=embedder, documents=documents, source_metadata=source_metadata)
     except Exception:
         if embedder is not None:
             embedder.close()

@@ -34,7 +34,7 @@ from src.graph import GraphBackend, select_graph
 from src.retrieval.corpus import build_corpus, corpus_digest, load_dataset
 from src.retrieval.dense import DenseRetriever
 from src.retrieval.hybrid import HybridRetriever
-from src.retrieval.pdf_metadata import build_pdf_metadata, pdf_namespace_tag
+from src.retrieval.pdf_metadata import build_pdf_metadata, langchain_pdf_namespace_tag
 from src.router import select_route
 from src.schemas import DiagnosisRequest
 
@@ -97,7 +97,7 @@ def main() -> int:
         try:
             settings = load_search_settings(ROOT / ".env")
             index = PineconeDocumentAdapter.connect(settings, build_corpus(baseline),
-                namespace_tag=pdf_namespace_tag(parsed_pdf.manifest) if parsed_pdf else None,
+                namespace_tag=langchain_pdf_namespace_tag(parsed_pdf.manifest) if parsed_pdf else None,
                 source_metadata=source_metadata or None)
             index.verify_visible()
             embedder = FireworksEmbeddingAdapter(settings.fireworks_api_key.get_secret_value(), settings.embedding_model,

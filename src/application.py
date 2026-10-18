@@ -18,7 +18,7 @@ from src.retrieval.corpus import build_corpus, load_dataset
 from src.router import select_route
 from src.schemas import DiagnosisRequest, OutcomeCounts
 from src.pdf_models import ParsedPDFDataset
-from src.retrieval.pdf_metadata import build_pdf_metadata, pdf_namespace_tag
+from src.retrieval.pdf_metadata import build_pdf_metadata, langchain_pdf_namespace_tag
 
 if TYPE_CHECKING:
     from src.retrieval.live import LiveRetrieval
@@ -56,7 +56,7 @@ class Application:
             # The existing index holds the immutable baseline. Newly recorded
             # feedback is fetched/cited from SQL, not assigned a fake index score.
             self._retrieval = open_live_retrieval(load_search_settings(self.env_file), build_corpus(self.baseline),
-                namespace_tag=pdf_namespace_tag(self.pdf_dataset.manifest) if self.pdf_dataset else None,
+                namespace_tag=langchain_pdf_namespace_tag(self.pdf_dataset.manifest) if self.pdf_dataset else 'lc-v1',
                 source_metadata=build_pdf_metadata(self.pdf_dataset) if self.pdf_dataset else None)
         agent = DiagnosisAgent(current, self.store, self.explanation,
             self._retrieval.dense if self._retrieval else None,

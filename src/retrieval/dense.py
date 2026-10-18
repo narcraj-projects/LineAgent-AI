@@ -15,10 +15,9 @@ class DenseRetriever:
         request = DiagnosisRequest(query=query, equipment_id=equipment_id)
         if not 1 <= top_k <= 100:
             raise ValueError("Search top_k must be in 1..100")
-        batch = self.embedder.embed((request.query,), "query")
-        if batch.model != self.embedder.model or batch.dimension != self.index.configuration.dimension or len(batch.vectors) != 1:
-            raise ValueError("Query embedding does not match retrieval configuration")
-        return self.index.dense_search(batch.vectors[0], top_k, equipment_id)
+        from src.adapters.langchain_retrieval import search_with_langchain
+
+        return search_with_langchain(self.embedder, self.index, request.query, top_k, equipment_id, "dense")
 
     def retrieve(self, request: DiagnosisRequest) -> tuple[Evidence, ...]:
         query = f"{request.alarm_code} {request.query}" if request.alarm_code else request.query

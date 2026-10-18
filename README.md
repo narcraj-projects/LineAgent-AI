@@ -19,6 +19,18 @@ can support traceable answers, recorded outcomes and comparative RAG evaluation.
 - Two synthetic PDF compilations, real text extraction, section chunking and physical-page citations.
 - Frozen 30-question evaluation across four retrieval modes, with raw results and optional LangSmith traces.
 
+## LangChain pipeline
+
+LangChain now handles verified PDF Documents and section splitting, vector-store
+ingestion, dense/hybrid retrievers, read-only SQL/graph tools and the structured
+Fireworks generation chain. The deterministic Python router and source/fix/part/
+rate validation remain authoritative. No LangGraph is used.
+
+See [the migration record](docs/LANGCHAIN_MIGRATION.md) for the exact components,
+isolated PDF namespace, pinned packages, models, measured failures and checks.
+The existing published evaluation table below remains historical; the migration
+evaluation is a separate run and does not overwrite those results.
+
 ## Architecture
 
 ```mermaid

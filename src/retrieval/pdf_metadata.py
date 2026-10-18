@@ -34,3 +34,8 @@ def build_pdf_metadata(parsed: ParsedPDFDataset) -> dict[str, RAGSourceMetadata]
             result[doc.source_id] = RAGSourceMetadata(**common, origin="synthetic_work_order_json",
                 failure_mode_ids=(alarms[order.alarm_code].failure_mode_id,), fix_ids=(order.fix_id,))
     return result
+
+
+def langchain_pdf_namespace_tag(manifest: PDFManifest) -> str:
+    """Isolate LangChain ingestion from all original PDF baseline namespaces."""
+    return pdf_namespace_tag(manifest) + "-lc-v1"
