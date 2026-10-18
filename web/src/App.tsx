@@ -48,7 +48,7 @@ export default function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [alarm, setAlarm] = useState('SYN-ALM-001');
   const [query, setQuery] = useState('Explain the cause, supported fix and parts.');
-  const [mode, setMode] = useState<Mode>('auto');
+  const [mode, setMode] = useState<Mode>('combined');
   const [backend, setBackend] = useState('auto');
   const [busy, setBusy] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);

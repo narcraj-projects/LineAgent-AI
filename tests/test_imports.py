@@ -9,7 +9,7 @@ import pytest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MODULES = ["app", "scripts", "scripts.generate_data", "scripts.generate_pdfs", "scripts.ingest_pdfs", "scripts.check_pdf_ui", "scripts.check_pdf_retrieval", "scripts.check_neo4j", "scripts.check_graph", "scripts.index_pinecone", "scripts.diagnose", "scripts.check_feedback", "evals", "evals.models", "evals.scoring", "evals.run_suite", "evals.upload_traces", "evals.report"] + [
+MODULES = ["app", "scripts", "scripts.generate_data", "scripts.generate_pdfs", "scripts.ingest_pdfs", "scripts.check_pdf_ui", "scripts.check_pdf_retrieval", "scripts.check_neo4j", "scripts.check_graph", "scripts.index_pinecone", "scripts.diagnose", "scripts.check_feedback", "evals", "evals.models", "evals.scoring", "evals.run_suite", "evals.upload_traces", "evals.report", "evals.model_benchmark", "evals.hosted_embedding_benchmark"] + [
     ".".join(path.relative_to(ROOT).with_suffix("").parts).removesuffix(".__init__")
     for path in sorted((ROOT / "src").rglob("*.py"))
 ]

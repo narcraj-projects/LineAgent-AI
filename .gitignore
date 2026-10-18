@@ -49,3 +49,6 @@ web/coverage/
 # Original supplied planning attachments stay local; publish implementation docs.
 LineMedic_PRD_v3.pdf
 LineMedic_PRD_Codex_Build_Playbook.pdf
+
+# Personal learning PDFs never enter source or build context.
+/output/pdf/guides/

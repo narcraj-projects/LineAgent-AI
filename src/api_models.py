@@ -52,7 +52,7 @@ class Catalog(Contract):
 class DiagnosisInput(Contract):
     query: Annotated[str, Field(min_length=1, max_length=4000)]
     alarm_code: NonEmpty | None = None
-    mode: SelectedMode = "auto"
+    mode: SelectedMode = "combined"
 
 
 class DiagnosisOutput(Contract):

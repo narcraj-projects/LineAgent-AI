@@ -22,3 +22,6 @@ web/coverage/
 **/.env.*
 **/*.pem
 **/*.key
+
+# Personal learning PDFs never enter source or build context.
+output/pdf/guides/

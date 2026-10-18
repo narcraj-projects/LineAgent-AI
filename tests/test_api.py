@@ -191,3 +191,12 @@ def test_graph_explorer_includes_failed_feedback_once_with_current_counts(api_co
     fix = next(n for n in body['nodes'] if n['id'] == 'SYN-FIX-004')
     assert fix['outcomes'] == {'worked':2,'did_not_work':1}
     assert sum(n['id'] == event.work_order.work_order_id for n in body['nodes']) == 1
+
+
+def test_omitted_mode_uses_hybrid_and_graph_by_default(api_context):
+    client, _, _ = api_context
+    connect(client)
+    result = client.post("/api/diagnosis", json={"query": "SYN-ALM-004"}).json()["run"]
+    assert result["response"]["status"] == "supported"
+    assert result["decision"]["route"] == "combined"
+    assert "hybrid" in result["tools"] and "graph_paths" in result["tools"]

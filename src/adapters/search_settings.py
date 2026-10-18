@@ -18,7 +18,7 @@ class SearchSettings(Contract):
     pinecone_api_key: SecretStr
     fireworks_api_key: SecretStr
     index_name: NonEmpty
-    embedding_model: NonEmpty = "fireworks/qwen3-embedding-8b"
+    embedding_model: NonEmpty = "nomic-ai/nomic-embed-text-v1.5"
     dense_field: NonEmpty | None = None
     text_field: NonEmpty | None = None
     ca_file: Path | None = None
@@ -39,7 +39,7 @@ def load_search_settings(env_file: Path | None = None) -> SearchSettings:
     return SearchSettings(
         pinecone_api_key=SecretStr(values["PINECONE_API_KEY"]),
         fireworks_api_key=SecretStr(values["FIREWORKS_API_KEY"]), index_name=values["PINECONE_INDEX_NAME"],
-        embedding_model=values["FIREWORKS_EMBEDDING_MODEL"] or "fireworks/qwen3-embedding-8b",
+        embedding_model=values["FIREWORKS_EMBEDDING_MODEL"] or "nomic-ai/nomic-embed-text-v1.5",
         dense_field=values["PINECONE_DENSE_FIELD"] or None, text_field=values["PINECONE_TEXT_FIELD"] or None,
         ca_file=Path(values["SSL_CERT_FILE"]) if values["SSL_CERT_FILE"] else None,
     )

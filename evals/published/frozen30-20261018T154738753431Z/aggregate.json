@@ -1,0 +1,346 @@
+[
+  {
+    "mode": "dense",
+    "attempted": 30,
+    "skipped": 0,
+    "passed": 24,
+    "failed_ids": [
+      "SYN-Q-011",
+      "SYN-Q-012",
+      "SYN-Q-016",
+      "SYN-Q-017",
+      "SYN-Q-019",
+      "SYN-Q-020"
+    ],
+    "skip_reasons": [],
+    "top1_fix": {
+      "correct": 21,
+      "n": 27,
+      "rate": 0.7777777777777778
+    },
+    "exact_parts": {
+      "correct": 21,
+      "n": 27,
+      "rate": 0.7777777777777778
+    },
+    "citation_validity_answered": {
+      "correct": 21,
+      "n": 21,
+      "rate": 1.0
+    },
+    "citation_coverage_expected_supported": {
+      "correct": 21,
+      "n": 27,
+      "rate": 0.7777777777777778
+    },
+    "graph_path_coverage": {
+      "correct": 0,
+      "n": 27,
+      "rate": 0.0
+    },
+    "audited_rates": {
+      "correct": 21,
+      "n": 27,
+      "rate": 0.7777777777777778
+    },
+    "refusal_correctness": {
+      "correct": 3,
+      "n": 3,
+      "rate": 1.0
+    },
+    "routing_accuracy": {
+      "correct": 30,
+      "n": 30,
+      "rate": 1.0
+    },
+    "retrieval_recall_at_5": {
+      "mean": 0.75,
+      "n": 27
+    },
+    "latency_ms": {
+      "p50": 3341.746499761939,
+      "p95": 4859.823524532839,
+      "n": 30,
+      "english_p95": 4907.451099716126,
+      "english_n": 25
+    },
+    "cost_usd_total": null,
+    "cost_known_queries": 3,
+    "cost_unknown_queries": 27,
+    "observed_fireworks_usage": {
+      "/inference/v1/embeddings": {
+        "calls": 27,
+        "usage_reported_calls": 27,
+        "prompt_tokens": 1017,
+        "completion_tokens": 0,
+        "total_tokens": 1017
+      },
+      "/inference/v1/chat/completions": {
+        "calls": 21,
+        "usage_reported_calls": 21,
+        "prompt_tokens": 36116,
+        "completion_tokens": 6120,
+        "total_tokens": 42236
+      }
+    },
+    "trace_statuses": [
+      "PASS: synchronous trace upload acknowledged"
+    ],
+    "trace_replay": {
+      "acknowledged_cells": 0,
+      "failed_upload_attempts": 0,
+      "note": "Original trace_status records startup configuration; replay uploads are separate observations."
+    }
+  },
+  {
+    "mode": "hybrid",
+    "attempted": 30,
+    "skipped": 0,
+    "passed": 30,
+    "failed_ids": [],
+    "skip_reasons": [],
+    "top1_fix": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "exact_parts": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "citation_validity_answered": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "citation_coverage_expected_supported": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "graph_path_coverage": {
+      "correct": 0,
+      "n": 27,
+      "rate": 0.0
+    },
+    "audited_rates": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "refusal_correctness": {
+      "correct": 3,
+      "n": 3,
+      "rate": 1.0
+    },
+    "routing_accuracy": {
+      "correct": 30,
+      "n": 30,
+      "rate": 1.0
+    },
+    "retrieval_recall_at_5": {
+      "mean": 1.0,
+      "n": 27
+    },
+    "latency_ms": {
+      "p50": 3692.812199704349,
+      "p95": 6562.702584872015,
+      "n": 30,
+      "english_p95": 7154.125259816639,
+      "english_n": 25
+    },
+    "cost_usd_total": null,
+    "cost_known_queries": 3,
+    "cost_unknown_queries": 27,
+    "observed_fireworks_usage": {
+      "/inference/v1/embeddings": {
+        "calls": 27,
+        "usage_reported_calls": 27,
+        "prompt_tokens": 1017,
+        "completion_tokens": 0,
+        "total_tokens": 1017
+      },
+      "/inference/v1/chat/completions": {
+        "calls": 27,
+        "usage_reported_calls": 27,
+        "prompt_tokens": 50070,
+        "completion_tokens": 7744,
+        "total_tokens": 57814
+      }
+    },
+    "trace_statuses": [
+      "PASS: synchronous trace upload acknowledged"
+    ],
+    "trace_replay": {
+      "acknowledged_cells": 0,
+      "failed_upload_attempts": 0,
+      "note": "Original trace_status records startup configuration; replay uploads are separate observations."
+    }
+  },
+  {
+    "mode": "graph",
+    "attempted": 30,
+    "skipped": 0,
+    "passed": 30,
+    "failed_ids": [],
+    "skip_reasons": [],
+    "top1_fix": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "exact_parts": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "citation_validity_answered": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "citation_coverage_expected_supported": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "graph_path_coverage": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "audited_rates": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "refusal_correctness": {
+      "correct": 3,
+      "n": 3,
+      "rate": 1.0
+    },
+    "routing_accuracy": {
+      "correct": 30,
+      "n": 30,
+      "rate": 1.0
+    },
+    "retrieval_recall_at_5": {
+      "mean": null,
+      "n": 0
+    },
+    "latency_ms": {
+      "p50": 2884.2699001543224,
+      "p95": 4051.5017345547676,
+      "n": 30,
+      "english_p95": 3944.555079564451,
+      "english_n": 25
+    },
+    "cost_usd_total": null,
+    "cost_known_queries": 3,
+    "cost_unknown_queries": 27,
+    "observed_fireworks_usage": {
+      "/inference/v1/chat/completions": {
+        "calls": 27,
+        "usage_reported_calls": 27,
+        "prompt_tokens": 46108,
+        "completion_tokens": 7808,
+        "total_tokens": 53916
+      }
+    },
+    "trace_statuses": [
+      "PASS: synchronous trace upload acknowledged"
+    ],
+    "trace_replay": {
+      "acknowledged_cells": 0,
+      "failed_upload_attempts": 0,
+      "note": "Original trace_status records startup configuration; replay uploads are separate observations."
+    }
+  },
+  {
+    "mode": "combined",
+    "attempted": 30,
+    "skipped": 0,
+    "passed": 30,
+    "failed_ids": [],
+    "skip_reasons": [],
+    "top1_fix": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "exact_parts": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "citation_validity_answered": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "citation_coverage_expected_supported": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "graph_path_coverage": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "audited_rates": {
+      "correct": 27,
+      "n": 27,
+      "rate": 1.0
+    },
+    "refusal_correctness": {
+      "correct": 3,
+      "n": 3,
+      "rate": 1.0
+    },
+    "routing_accuracy": {
+      "correct": 30,
+      "n": 30,
+      "rate": 1.0
+    },
+    "retrieval_recall_at_5": {
+      "mean": 1.0,
+      "n": 27
+    },
+    "latency_ms": {
+      "p50": 5393.133550416678,
+      "p95": 7927.75060050189,
+      "n": 30,
+      "english_p95": 8319.665100425478,
+      "english_n": 25
+    },
+    "cost_usd_total": null,
+    "cost_known_queries": 3,
+    "cost_unknown_queries": 27,
+    "observed_fireworks_usage": {
+      "/inference/v1/embeddings": {
+        "calls": 27,
+        "usage_reported_calls": 27,
+        "prompt_tokens": 1017,
+        "completion_tokens": 0,
+        "total_tokens": 1017
+      },
+      "/inference/v1/chat/completions": {
+        "calls": 27,
+        "usage_reported_calls": 27,
+        "prompt_tokens": 46108,
+        "completion_tokens": 7657,
+        "total_tokens": 53765
+      }
+    },
+    "trace_statuses": [
+      "PASS: synchronous trace upload acknowledged"
+    ],
+    "trace_replay": {
+      "acknowledged_cells": 0,
+      "failed_upload_attempts": 0,
+      "note": "Original trace_status records startup configuration; replay uploads are separate observations."
+    }
+  }
+]

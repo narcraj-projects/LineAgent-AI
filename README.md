@@ -19,6 +19,22 @@ can support traceable answers, recorded outcomes and comparative RAG evaluation.
 - Two synthetic PDF compilations, real text extraction, section chunking and physical-page citations.
 - Frozen 30-question evaluation across four retrieval modes, with raw results and optional LangSmith traces.
 
+## Selected model configuration
+
+Following the accuracy-first benchmark decision, the dashboard and omitted-mode
+HTTP requests default to **Hybrid + graph**. Generation remains DeepSeek v4.1
+Flash; embeddings use **Nomic Embed v1.5** through LangChain. Configure a separate
+768-dimensional cosine Pinecone index with full-text search; never reuse a Qwen
+1024-dimensional collection for Nomic vectors. The current selected index is
+`linemedic-nomic-benchmark-v1`, whose verified 80-source namespace is reused after
+selection. The original Qwen index remains intact.
+
+The hosted frozen suite measured dense **24/30** versus Qwen **15/30**, while
+hybrid, graph and combined remained **30/30**. Six dense failures and weaker
+source recall on two exact-token checks remain; this is not a production accuracy
+claim. See [benchmark results](docs/MODEL_BENCHMARK_RESULTS.md). Personal manual,
+walkthrough and application PDFs are excluded from Git and Docker build contexts.
+
 ## LangChain pipeline
 
 LangChain now handles verified PDF Documents and section splitting, vector-store

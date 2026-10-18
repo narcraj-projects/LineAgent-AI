@@ -41,7 +41,7 @@ describe('LineMedic dashboard state', () => {
     expect(screen.queryByText('SYN-FIX-001')).toBeNull();
   });
   it('shows actual citations, PDF page mapping and graph inspection', async () => {
-    await investigate(); expect(screen.getByTitle('PDF evidence SYN-SEC-001').getAttribute('src')).toContain('/pages/1.png');
+    await investigate(); expect((screen.getByLabelText('Retrieval strategy') as HTMLSelectElement).value).toBe('combined'); expect(api.diagnose).toHaveBeenCalledWith(expect.any(String), expect.any(String), 'combined'); expect(screen.getByTitle('PDF evidence SYN-SEC-001').getAttribute('src')).toContain('/pages/1.png');
     expect(screen.getByText('2/3 recorded worked')).toBeTruthy();
     fireEvent.click(screen.getByRole('button', { name: 'Graph path' })); expect(screen.getByText('VERIFIED RELATIONSHIPS')).toBeTruthy();
     expect(screen.getByRole('button', { name: /Failure mode SYN-FM-001/ })).toBeTruthy();

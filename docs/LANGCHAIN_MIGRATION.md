@@ -1,5 +1,9 @@
 # LangChain pipeline migration
 
+The model names/results below describe the migration stage. The subsequent
+accuracy-first selection uses Nomic v1.5 embeddings and combined dashboard/API
+defaults; see [current model selection](MODEL_SELECTION.md).
+
 The Python router now runs LangChain document, ingestion, retrieval and generation
 components. LangGraph is not installed or used. Model authority and database
 durability remain constrained by the original application services.

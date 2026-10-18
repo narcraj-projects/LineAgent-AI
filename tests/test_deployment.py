@@ -64,7 +64,11 @@ def test_packaged_evaluation_matches_saved_measurements(tmp_path):
     shutil.copytree(root / 'evals/published', tmp_path / 'evals/published')
     report = read_evaluation(tmp_path)
     assert report.status == 'measured' and report.pdf_backed is True
-    assert [mode.passed for mode in report.modes] == [15, 30, 30, 30]
+    assert report.run_id == 'frozen30-20261018T154738753431Z'
+    assert [mode.passed for mode in report.modes] == [24, 30, 30, 30]
+    import json
+    original = json.loads((root / 'evals/published/frozen30-20261018T064329766498Z/aggregate.json').read_bytes())
+    assert [mode['passed'] for mode in original] == [15, 30, 30, 30]
     assert all(mode.cost_usd is None for mode in report.modes)
 
 

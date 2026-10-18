@@ -37,7 +37,7 @@ def test_embedding_model_and_chat_model_are_separate(tmp_path: Path) -> None:
     env = tmp_path / ".env"
     env.write_text('PINECONE_API_KEY=unit-fixture-pinecone\nPINECONE_INDEX_NAME=unit-index\nFIREWORKS_API_KEY=unit-fixture-fireworks\nFIREWORKS_MODEL=unit-chat-model\n', encoding="utf-8")
     settings = load_search_settings(env)
-    assert settings.embedding_model == "fireworks/qwen3-embedding-8b"
+    assert settings.embedding_model == "nomic-ai/nomic-embed-text-v1.5"
     assert "unit-fixture-" not in repr(settings)
 
 
