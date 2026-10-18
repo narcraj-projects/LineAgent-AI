@@ -1,0 +1,36 @@
+{
+  "counts": {
+    "alarms": 20,
+    "equipment": 10,
+    "failure_modes": 15,
+    "fixes": 25,
+    "lines": 3,
+    "manual_sections": 30,
+    "spare_parts": 20,
+    "work_orders": 50
+  },
+  "question_counts": {
+    "exact_part": 2,
+    "multi_hop": 10,
+    "refusal": 3,
+    "single_hop": 10,
+    "tamil": 5
+  },
+  "schema_version": "1.0",
+  "seed": 20261018,
+  "sha256": {
+    "eval/alarm_truth.json": "313f2b2696a6c403f2cf9c31c9eed03f0c03ba2fbf5d8e10863ca370e70aa45b",
+    "eval/questions.json": "603548c714326cdcb5098bf168fe2f3c612b7a3ec8b4b40a7dcf286322849953",
+    "synthetic/alarms.json": "3806228f51299bf06d2477ce7153939dc8ba015a17f765ba32647a1320dbc122",
+    "synthetic/equipment.json": "63771d5cc10c443e435f0193db7f078f6b93db3f8adbcd8cf7aac2d71fe3979c",
+    "synthetic/failure_modes.json": "6ae71c5e6b8bfef02c2b39308dba90f5e84757adae7c755db773c309f162fdbb",
+    "synthetic/fixes.json": "f028a947b69176f88064aa8f146650fc67d63722312b6d3b58fd383722b41778",
+    "synthetic/graph_relationships.json": "d472e148942f89fe942de77f165ebcc1063640b2b4f71277f331e0ed1f666f87",
+    "synthetic/lines.json": "91b02c3f032d1c2d2746a87d61971c164a6854854ce5d1b8a431a4a74332bfe2",
+    "synthetic/manual_sections.json": "75d607c26f00246e5b1dfd84745f14fc0c5e21c7739effe4fabf6ab2818d54ab",
+    "synthetic/metadata.json": "4690d61bc297787112d0713617c23f23e267964c8702131df99c85a8f913715a",
+    "synthetic/spare_parts.json": "7f0372caf4a2ce3dbf695cc31f4c3d277c35ad27b0ebc84891271a7272b9c269",
+    "synthetic/work_orders.json": "9630251d76c3673decbbd3cdaf79b94e147a3d303d29f32b1ec7c1fe664b7e09"
+  },
+  "synthetic": true
+}

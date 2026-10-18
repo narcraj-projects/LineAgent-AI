@@ -1,0 +1,152 @@
+[
+  {
+    "category": "photoeye offset",
+    "description": "Fictional fault: container not detected.",
+    "failure_mode_id": "SYN-FM-001",
+    "fix_ids": [
+      "SYN-FIX-001",
+      "SYN-FIX-016"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "guide spacing drift",
+    "description": "Fictional fault: container position inconsistent.",
+    "failure_mode_id": "SYN-FM-002",
+    "fix_ids": [
+      "SYN-FIX-017",
+      "SYN-FIX-002"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "timing recipe mismatch",
+    "description": "Fictional fault: transfer timing inconsistent.",
+    "failure_mode_id": "SYN-FM-003",
+    "fix_ids": [
+      "SYN-FIX-003",
+      "SYN-FIX-018"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "cap feed orientation",
+    "description": "Fictional fault: cap presentation inconsistent.",
+    "failure_mode_id": "SYN-FM-004",
+    "fix_ids": [
+      "SYN-FIX-019",
+      "SYN-FIX-004"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "label reference offset",
+    "description": "Fictional fault: label position inconsistent.",
+    "failure_mode_id": "SYN-FM-005",
+    "fix_ids": [
+      "SYN-FIX-005",
+      "SYN-FIX-020"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "carton sensor alignment",
+    "description": "Fictional fault: carton presence intermittent.",
+    "failure_mode_id": "SYN-FM-006",
+    "fix_ids": [
+      "SYN-FIX-021",
+      "SYN-FIX-006"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "reject confirmation mismatch",
+    "description": "Fictional fault: reject confirmation absent.",
+    "failure_mode_id": "SYN-FM-007",
+    "fix_ids": [
+      "SYN-FIX-007",
+      "SYN-FIX-022"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "print reference drift",
+    "description": "Fictional fault: print position inconsistent.",
+    "failure_mode_id": "SYN-FM-008",
+    "fix_ids": [
+      "SYN-FIX-023",
+      "SYN-FIX-008"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "simulated belt tracking",
+    "description": "Fictional fault: transfer position drifting.",
+    "failure_mode_id": "SYN-FM-009",
+    "fix_ids": [
+      "SYN-FIX-009",
+      "SYN-FIX-024"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "foil presentation mismatch",
+    "description": "Fictional fault: foil position inconsistent.",
+    "failure_mode_id": "SYN-FM-010",
+    "fix_ids": [
+      "SYN-FIX-025",
+      "SYN-FIX-010"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "virtual fill recipe mismatch",
+    "description": "Fictional fault: simulated fill target mismatch.",
+    "failure_mode_id": "SYN-FM-011",
+    "fix_ids": [
+      "SYN-FIX-011",
+      "SYN-FIX-016"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "checkweight reference drift",
+    "description": "Fictional fault: simulated checkweight disagreement.",
+    "failure_mode_id": "SYN-FM-012",
+    "fix_ids": [
+      "SYN-FIX-017",
+      "SYN-FIX-012"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "leaflet presence alignment",
+    "description": "Fictional fault: leaflet presence intermittent.",
+    "failure_mode_id": "SYN-FM-013",
+    "fix_ids": [
+      "SYN-FIX-013",
+      "SYN-FIX-018"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "case stop reference drift",
+    "description": "Fictional fault: case position inconsistent.",
+    "failure_mode_id": "SYN-FM-014",
+    "fix_ids": [
+      "SYN-FIX-019",
+      "SYN-FIX-014"
+    ],
+    "synthetic": true
+  },
+  {
+    "category": "virtual count recipe mismatch",
+    "description": "Fictional fault: simulated count disagreement.",
+    "failure_mode_id": "SYN-FM-015",
+    "fix_ids": [
+      "SYN-FIX-015",
+      "SYN-FIX-020"
+    ],
+    "synthetic": true
+  }
+]

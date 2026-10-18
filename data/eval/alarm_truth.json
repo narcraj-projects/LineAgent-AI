@@ -1,0 +1,382 @@
+[
+  {
+    "alarm_code": "SYN-ALM-001",
+    "best_fix_id": "SYN-FIX-001",
+    "decoy_fix_ids": [
+      "SYN-FIX-016"
+    ],
+    "equipment_id": "SYN-EQ-001",
+    "expected_part_numbers": [
+      "SYN-PART-001"
+    ],
+    "failure_mode_id": "SYN-FM-001",
+    "source_ids": [
+      "SYN-SEC-001",
+      "SYN-SEC-002",
+      "SYN-WO-001",
+      "SYN-WO-002"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-002",
+    "best_fix_id": "SYN-FIX-002",
+    "decoy_fix_ids": [
+      "SYN-FIX-017"
+    ],
+    "equipment_id": "SYN-EQ-001",
+    "expected_part_numbers": [
+      "SYN-PART-002"
+    ],
+    "failure_mode_id": "SYN-FM-002",
+    "source_ids": [
+      "SYN-SEC-003",
+      "SYN-SEC-004",
+      "SYN-WO-003",
+      "SYN-WO-004"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-003",
+    "best_fix_id": "SYN-FIX-003",
+    "decoy_fix_ids": [
+      "SYN-FIX-018"
+    ],
+    "equipment_id": "SYN-EQ-002",
+    "expected_part_numbers": [
+      "SYN-PART-003"
+    ],
+    "failure_mode_id": "SYN-FM-003",
+    "source_ids": [
+      "SYN-SEC-005",
+      "SYN-SEC-006",
+      "SYN-WO-006",
+      "SYN-WO-007"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-004",
+    "best_fix_id": "SYN-FIX-004",
+    "decoy_fix_ids": [
+      "SYN-FIX-019"
+    ],
+    "equipment_id": "SYN-EQ-002",
+    "expected_part_numbers": [
+      "SYN-PART-004"
+    ],
+    "failure_mode_id": "SYN-FM-004",
+    "source_ids": [
+      "SYN-SEC-007",
+      "SYN-SEC-008",
+      "SYN-WO-008",
+      "SYN-WO-009"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-005",
+    "best_fix_id": "SYN-FIX-005",
+    "decoy_fix_ids": [
+      "SYN-FIX-020"
+    ],
+    "equipment_id": "SYN-EQ-003",
+    "expected_part_numbers": [
+      "SYN-PART-005"
+    ],
+    "failure_mode_id": "SYN-FM-005",
+    "source_ids": [
+      "SYN-SEC-009",
+      "SYN-SEC-010",
+      "SYN-WO-011",
+      "SYN-WO-012"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-006",
+    "best_fix_id": "SYN-FIX-006",
+    "decoy_fix_ids": [
+      "SYN-FIX-021"
+    ],
+    "equipment_id": "SYN-EQ-003",
+    "expected_part_numbers": [
+      "SYN-PART-006"
+    ],
+    "failure_mode_id": "SYN-FM-006",
+    "source_ids": [
+      "SYN-SEC-011",
+      "SYN-SEC-012",
+      "SYN-WO-013",
+      "SYN-WO-014"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-007",
+    "best_fix_id": "SYN-FIX-007",
+    "decoy_fix_ids": [
+      "SYN-FIX-022"
+    ],
+    "equipment_id": "SYN-EQ-004",
+    "expected_part_numbers": [
+      "SYN-PART-007"
+    ],
+    "failure_mode_id": "SYN-FM-007",
+    "source_ids": [
+      "SYN-SEC-013",
+      "SYN-SEC-014",
+      "SYN-WO-016",
+      "SYN-WO-017"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-008",
+    "best_fix_id": "SYN-FIX-008",
+    "decoy_fix_ids": [
+      "SYN-FIX-023"
+    ],
+    "equipment_id": "SYN-EQ-004",
+    "expected_part_numbers": [
+      "SYN-PART-008"
+    ],
+    "failure_mode_id": "SYN-FM-008",
+    "source_ids": [
+      "SYN-SEC-015",
+      "SYN-SEC-016",
+      "SYN-WO-018",
+      "SYN-WO-019"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-009",
+    "best_fix_id": "SYN-FIX-009",
+    "decoy_fix_ids": [
+      "SYN-FIX-024"
+    ],
+    "equipment_id": "SYN-EQ-005",
+    "expected_part_numbers": [
+      "SYN-PART-009"
+    ],
+    "failure_mode_id": "SYN-FM-009",
+    "source_ids": [
+      "SYN-SEC-017",
+      "SYN-SEC-018",
+      "SYN-WO-021",
+      "SYN-WO-022"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-010",
+    "best_fix_id": "SYN-FIX-010",
+    "decoy_fix_ids": [
+      "SYN-FIX-025"
+    ],
+    "equipment_id": "SYN-EQ-005",
+    "expected_part_numbers": [
+      "SYN-PART-010"
+    ],
+    "failure_mode_id": "SYN-FM-010",
+    "source_ids": [
+      "SYN-SEC-019",
+      "SYN-SEC-020",
+      "SYN-WO-023",
+      "SYN-WO-024"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-011",
+    "best_fix_id": "SYN-FIX-011",
+    "decoy_fix_ids": [
+      "SYN-FIX-016"
+    ],
+    "equipment_id": "SYN-EQ-006",
+    "expected_part_numbers": [
+      "SYN-PART-011"
+    ],
+    "failure_mode_id": "SYN-FM-011",
+    "source_ids": [
+      "SYN-SEC-021",
+      "SYN-SEC-022",
+      "SYN-WO-026",
+      "SYN-WO-027"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-012",
+    "best_fix_id": "SYN-FIX-012",
+    "decoy_fix_ids": [
+      "SYN-FIX-017"
+    ],
+    "equipment_id": "SYN-EQ-006",
+    "expected_part_numbers": [
+      "SYN-PART-012"
+    ],
+    "failure_mode_id": "SYN-FM-012",
+    "source_ids": [
+      "SYN-SEC-023",
+      "SYN-SEC-024",
+      "SYN-WO-028",
+      "SYN-WO-029"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-013",
+    "best_fix_id": "SYN-FIX-013",
+    "decoy_fix_ids": [
+      "SYN-FIX-018"
+    ],
+    "equipment_id": "SYN-EQ-007",
+    "expected_part_numbers": [
+      "SYN-PART-013"
+    ],
+    "failure_mode_id": "SYN-FM-013",
+    "source_ids": [
+      "SYN-SEC-025",
+      "SYN-SEC-026",
+      "SYN-WO-031",
+      "SYN-WO-032"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-014",
+    "best_fix_id": "SYN-FIX-014",
+    "decoy_fix_ids": [
+      "SYN-FIX-019"
+    ],
+    "equipment_id": "SYN-EQ-007",
+    "expected_part_numbers": [
+      "SYN-PART-014"
+    ],
+    "failure_mode_id": "SYN-FM-014",
+    "source_ids": [
+      "SYN-SEC-027",
+      "SYN-SEC-028",
+      "SYN-WO-033",
+      "SYN-WO-034"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-015",
+    "best_fix_id": "SYN-FIX-015",
+    "decoy_fix_ids": [
+      "SYN-FIX-020"
+    ],
+    "equipment_id": "SYN-EQ-008",
+    "expected_part_numbers": [
+      "SYN-PART-015"
+    ],
+    "failure_mode_id": "SYN-FM-015",
+    "source_ids": [
+      "SYN-SEC-029",
+      "SYN-SEC-030",
+      "SYN-WO-036",
+      "SYN-WO-037"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-016",
+    "best_fix_id": "SYN-FIX-001",
+    "decoy_fix_ids": [
+      "SYN-FIX-016"
+    ],
+    "equipment_id": "SYN-EQ-008",
+    "expected_part_numbers": [
+      "SYN-PART-001"
+    ],
+    "failure_mode_id": "SYN-FM-001",
+    "source_ids": [
+      "SYN-SEC-001",
+      "SYN-SEC-002",
+      "SYN-WO-038",
+      "SYN-WO-039"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-017",
+    "best_fix_id": "SYN-FIX-002",
+    "decoy_fix_ids": [
+      "SYN-FIX-017"
+    ],
+    "equipment_id": "SYN-EQ-009",
+    "expected_part_numbers": [
+      "SYN-PART-002"
+    ],
+    "failure_mode_id": "SYN-FM-002",
+    "source_ids": [
+      "SYN-SEC-003",
+      "SYN-SEC-004",
+      "SYN-WO-041",
+      "SYN-WO-042"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-018",
+    "best_fix_id": "SYN-FIX-003",
+    "decoy_fix_ids": [
+      "SYN-FIX-018"
+    ],
+    "equipment_id": "SYN-EQ-009",
+    "expected_part_numbers": [
+      "SYN-PART-003"
+    ],
+    "failure_mode_id": "SYN-FM-003",
+    "source_ids": [
+      "SYN-SEC-005",
+      "SYN-SEC-006",
+      "SYN-WO-043",
+      "SYN-WO-044"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-019",
+    "best_fix_id": "SYN-FIX-004",
+    "decoy_fix_ids": [
+      "SYN-FIX-019"
+    ],
+    "equipment_id": "SYN-EQ-010",
+    "expected_part_numbers": [
+      "SYN-PART-004"
+    ],
+    "failure_mode_id": "SYN-FM-004",
+    "source_ids": [
+      "SYN-SEC-007",
+      "SYN-SEC-008",
+      "SYN-WO-046",
+      "SYN-WO-047"
+    ],
+    "synthetic": true
+  },
+  {
+    "alarm_code": "SYN-ALM-020",
+    "best_fix_id": "SYN-FIX-005",
+    "decoy_fix_ids": [
+      "SYN-FIX-020"
+    ],
+    "equipment_id": "SYN-EQ-010",
+    "expected_part_numbers": [
+      "SYN-PART-005"
+    ],
+    "failure_mode_id": "SYN-FM-005",
+    "source_ids": [
+      "SYN-SEC-009",
+      "SYN-SEC-010",
+      "SYN-WO-048",
+      "SYN-WO-049"
+    ],
+    "synthetic": true
+  }
+]

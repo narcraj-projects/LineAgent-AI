@@ -1,0 +1,329 @@
+{
+  "synthetic": true,
+  "started_at": "2026-10-18T06:43:29.766498+00:00",
+  "python": "3.13.5",
+  "question_count": 30,
+  "modes": [
+    "dense",
+    "hybrid",
+    "graph",
+    "combined"
+  ],
+  "seed": 20261018,
+  "question_sha256": "603548c714326cdcb5098bf168fe2f3c612b7a3ec8b4b40a7dcf286322849953",
+  "dataset_sha256": "aec35320c7a31a43a25164d635884ad6a2b6b03d6ff0411b144559a3944d7205",
+  "corpus_digest": "f67f56b15377cb8e8da139436e27a27385ed375f7106eca3bbb4b22f8412743d",
+  "setup": {
+    "sql": "sqlite:synthetic-snapshot",
+    "tracing": "configured; uploads not yet attempted",
+    "explanation": {
+      "provider": "fireworks:live-structured-chat",
+      "model": "accounts/fireworks/models/deepseek-v4p1-flash"
+    },
+    "retrieval": {
+      "provider": "pinecone:live",
+      "namespace": "linemedic-pdf-e9f7719f8e9ed29e-f67f56b15377cb8e-f959c6b849ad",
+      "configuration": {
+        "index_name": "linemedic-synthetic-rag-v1",
+        "dimension": 1024,
+        "metric": "cosine",
+        "dense_field": "embedding",
+        "text_field": "body",
+        "ready": true,
+        "schema_fields": [
+          "body",
+          "embedding"
+        ],
+        "api_surface": "pinecone-v10-documents"
+      },
+      "embedding_model": "fireworks/qwen3-embedding-8b"
+    },
+    "graph": {
+      "provider": "neo4j",
+      "mode": "live",
+      "reason": "Live Neo4j connection; no automatic seeding."
+    },
+    "supabase_readonly_baseline_check": {
+      "status": "PASS",
+      "live_orders": 51,
+      "frozen_orders": 50,
+      "excluded_later_feedback": 1
+    }
+  },
+  "blockers": {},
+  "method": "Forced retrieval ablations; natural router recorded separately. No answer labels supplied to agent.",
+  "order": "Serial; mode order rotates by question index; no retries or result cherry-picking.",
+  "cost": "USD unknown; no provider bill or verified tariffs. Usage is observed, not billed cost.",
+  "graph_snapshot": "Read-only live paths with histories restricted to original 50 WO IDs; baseline content verified.",
+  "limits": "One observation/cell, no Tamil language scoring, no RAGAS evaluator, no cache flush.",
+  "pdf_pipeline": {
+    "manifest": {
+      "schema_version": "1.0",
+      "synthetic": true,
+      "dataset_sha256": "aec35320c7a31a43a25164d635884ad6a2b6b03d6ff0411b144559a3944d7205",
+      "files": [
+        {
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "sha256": "ba6e27e41e0eee977fa4de8466156a5ffc274dc8805ef8486ce5a6ef50b91fea",
+          "pages": 18
+        },
+        {
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "sha256": "38322a79bd6634447a244a01a5e9107fede32b21a15719e75f5c83d1dd74b30e",
+          "pages": 12
+        }
+      ],
+      "citations": [
+        {
+          "section_id": "SYN-SEC-001",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 1,
+          "source_doc": "SYN-DOC-001",
+          "source_version": "1.0",
+          "logical_page": 1
+        },
+        {
+          "section_id": "SYN-SEC-002",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 2,
+          "source_doc": "SYN-DOC-001",
+          "source_version": "1.0",
+          "logical_page": 2
+        },
+        {
+          "section_id": "SYN-SEC-003",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 3,
+          "source_doc": "SYN-DOC-001",
+          "source_version": "1.0",
+          "logical_page": 3
+        },
+        {
+          "section_id": "SYN-SEC-004",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 4,
+          "source_doc": "SYN-DOC-001",
+          "source_version": "1.0",
+          "logical_page": 4
+        },
+        {
+          "section_id": "SYN-SEC-005",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 5,
+          "source_doc": "SYN-DOC-001",
+          "source_version": "1.0",
+          "logical_page": 5
+        },
+        {
+          "section_id": "SYN-SEC-006",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 6,
+          "source_doc": "SYN-DOC-001",
+          "source_version": "1.0",
+          "logical_page": 6
+        },
+        {
+          "section_id": "SYN-SEC-007",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 7,
+          "source_doc": "SYN-DOC-002",
+          "source_version": "1.0",
+          "logical_page": 1
+        },
+        {
+          "section_id": "SYN-SEC-008",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 8,
+          "source_doc": "SYN-DOC-002",
+          "source_version": "1.0",
+          "logical_page": 2
+        },
+        {
+          "section_id": "SYN-SEC-009",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 9,
+          "source_doc": "SYN-DOC-002",
+          "source_version": "1.0",
+          "logical_page": 3
+        },
+        {
+          "section_id": "SYN-SEC-010",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 10,
+          "source_doc": "SYN-DOC-002",
+          "source_version": "1.0",
+          "logical_page": 4
+        },
+        {
+          "section_id": "SYN-SEC-011",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 11,
+          "source_doc": "SYN-DOC-002",
+          "source_version": "1.0",
+          "logical_page": 5
+        },
+        {
+          "section_id": "SYN-SEC-012",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 12,
+          "source_doc": "SYN-DOC-002",
+          "source_version": "1.0",
+          "logical_page": 6
+        },
+        {
+          "section_id": "SYN-SEC-013",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 13,
+          "source_doc": "SYN-DOC-003",
+          "source_version": "1.0",
+          "logical_page": 1
+        },
+        {
+          "section_id": "SYN-SEC-014",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 14,
+          "source_doc": "SYN-DOC-003",
+          "source_version": "1.0",
+          "logical_page": 2
+        },
+        {
+          "section_id": "SYN-SEC-015",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 15,
+          "source_doc": "SYN-DOC-003",
+          "source_version": "1.0",
+          "logical_page": 3
+        },
+        {
+          "section_id": "SYN-SEC-016",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 16,
+          "source_doc": "SYN-DOC-003",
+          "source_version": "1.0",
+          "logical_page": 4
+        },
+        {
+          "section_id": "SYN-SEC-017",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 17,
+          "source_doc": "SYN-DOC-003",
+          "source_version": "1.0",
+          "logical_page": 5
+        },
+        {
+          "section_id": "SYN-SEC-018",
+          "filename": "linemedic-synthetic-manual-1.pdf",
+          "pdf_page": 18,
+          "source_doc": "SYN-DOC-003",
+          "source_version": "1.0",
+          "logical_page": 6
+        },
+        {
+          "section_id": "SYN-SEC-019",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 1,
+          "source_doc": "SYN-DOC-004",
+          "source_version": "1.0",
+          "logical_page": 1
+        },
+        {
+          "section_id": "SYN-SEC-020",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 2,
+          "source_doc": "SYN-DOC-004",
+          "source_version": "1.0",
+          "logical_page": 2
+        },
+        {
+          "section_id": "SYN-SEC-021",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 3,
+          "source_doc": "SYN-DOC-004",
+          "source_version": "1.0",
+          "logical_page": 3
+        },
+        {
+          "section_id": "SYN-SEC-022",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 4,
+          "source_doc": "SYN-DOC-004",
+          "source_version": "1.0",
+          "logical_page": 4
+        },
+        {
+          "section_id": "SYN-SEC-023",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 5,
+          "source_doc": "SYN-DOC-004",
+          "source_version": "1.0",
+          "logical_page": 5
+        },
+        {
+          "section_id": "SYN-SEC-024",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 6,
+          "source_doc": "SYN-DOC-004",
+          "source_version": "1.0",
+          "logical_page": 6
+        },
+        {
+          "section_id": "SYN-SEC-025",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 7,
+          "source_doc": "SYN-DOC-005",
+          "source_version": "1.0",
+          "logical_page": 1
+        },
+        {
+          "section_id": "SYN-SEC-026",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 8,
+          "source_doc": "SYN-DOC-005",
+          "source_version": "1.0",
+          "logical_page": 2
+        },
+        {
+          "section_id": "SYN-SEC-027",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 9,
+          "source_doc": "SYN-DOC-005",
+          "source_version": "1.0",
+          "logical_page": 3
+        },
+        {
+          "section_id": "SYN-SEC-028",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 10,
+          "source_doc": "SYN-DOC-005",
+          "source_version": "1.0",
+          "logical_page": 4
+        },
+        {
+          "section_id": "SYN-SEC-029",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 11,
+          "source_doc": "SYN-DOC-005",
+          "source_version": "1.0",
+          "logical_page": 5
+        },
+        {
+          "section_id": "SYN-SEC-030",
+          "filename": "linemedic-synthetic-manual-2.pdf",
+          "pdf_page": 12,
+          "source_doc": "SYN-DOC-005",
+          "source_version": "1.0",
+          "logical_page": 6
+        }
+      ]
+    },
+    "manual_text_origin": "PDF extraction, canonical metadata verified before retrieval",
+    "manual_chunks": 30,
+    "work_order_origin": "Frozen synthetic JSON"
+  },
+  "finished_at": "2026-10-18T06:52:40.278070+00:00",
+  "completed_cells": 120,
+  "excluded_graph_feedback_ids": [
+    "SYN-WO-FB-36984df50b0a4cbaa310abfdf4aee12d"
+  ],
+  "execution_conditions": "Serial cases; local regression, live UI smoke and exact-token checks overlapped part of this run. Not an isolated performance benchmark."
+}

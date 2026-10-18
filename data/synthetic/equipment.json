@@ -1,0 +1,62 @@
+[
+  {
+    "equipment_id": "SYN-EQ-001",
+    "equipment_type": "filler",
+    "line_id": "SYN-LINE-001",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-002",
+    "equipment_type": "capper",
+    "line_id": "SYN-LINE-002",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-003",
+    "equipment_type": "labeler",
+    "line_id": "SYN-LINE-003",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-004",
+    "equipment_type": "cartoner",
+    "line_id": "SYN-LINE-001",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-005",
+    "equipment_type": "checkweigher",
+    "line_id": "SYN-LINE-002",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-006",
+    "equipment_type": "case packer",
+    "line_id": "SYN-LINE-003",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-007",
+    "equipment_type": "printer",
+    "line_id": "SYN-LINE-001",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-008",
+    "equipment_type": "leaflet inserter",
+    "line_id": "SYN-LINE-002",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-009",
+    "equipment_type": "conveyor",
+    "line_id": "SYN-LINE-003",
+    "synthetic": true
+  },
+  {
+    "equipment_id": "SYN-EQ-010",
+    "equipment_type": "counter",
+    "line_id": "SYN-LINE-001",
+    "synthetic": true
+  }
+]

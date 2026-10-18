@@ -1,0 +1,51 @@
+# Python environments and build products
+.venv/
+.venv-*/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage*
+htmlcov/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+secrets.toml
+secrets/
+credentials/
+.aws/
+*.pem
+*.key
+
+# Local state and reports: never imply deployed persistence
+*.db
+*.sqlite*
+*.log
+logs/
+traces/
+tmp/
+evals/results/*
+!evals/results/.gitkeep
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# React dependencies, local build/test state
+node_modules/
+web/coverage/
+.vite/
+
+# Original supplied planning attachments stay local; publish implementation docs.
+LineMedic_PRD_v3.pdf
+LineMedic_PRD_Codex_Build_Playbook.pdf

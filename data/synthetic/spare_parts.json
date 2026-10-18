@@ -1,0 +1,122 @@
+[
+  {
+    "description": "Fictional simulator component 1",
+    "part_number": "SYN-PART-001",
+    "stock": 6,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 2",
+    "part_number": "SYN-PART-002",
+    "stock": 10,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 3",
+    "part_number": "SYN-PART-003",
+    "stock": 2,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 4",
+    "part_number": "SYN-PART-004",
+    "stock": 14,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 5",
+    "part_number": "SYN-PART-005",
+    "stock": 3,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 6",
+    "part_number": "SYN-PART-006",
+    "stock": 7,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 7",
+    "part_number": "SYN-PART-007",
+    "stock": 1,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 8",
+    "part_number": "SYN-PART-008",
+    "stock": 8,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 9",
+    "part_number": "SYN-PART-009",
+    "stock": 8,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 10",
+    "part_number": "SYN-PART-010",
+    "stock": 5,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 11",
+    "part_number": "SYN-PART-011",
+    "stock": 1,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 12",
+    "part_number": "SYN-PART-012",
+    "stock": 7,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 13",
+    "part_number": "SYN-PART-013",
+    "stock": 4,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 14",
+    "part_number": "SYN-PART-014",
+    "stock": 3,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 15",
+    "part_number": "SYN-PART-015",
+    "stock": 2,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 16",
+    "part_number": "SYN-PART-016",
+    "stock": 7,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 17",
+    "part_number": "SYN-PART-017",
+    "stock": 6,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 18",
+    "part_number": "SYN-PART-018",
+    "stock": 2,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 19",
+    "part_number": "SYN-PART-019",
+    "stock": 3,
+    "synthetic": true
+  },
+  {
+    "description": "Fictional simulator component 20",
+    "part_number": "SYN-PART-020",
+    "stock": 15,
+    "synthetic": true
+  }
+]

@@ -1,0 +1,20 @@
+# Synthetic factory, graph/retrieval adapters, Streamlit and milestone checks.
+# Supabase uses the documented REST/RPC API through pinned httpx; no extra SDK.
+pydantic==2.10.3
+streamlit==1.45.1
+networkx==3.4.2
+pytest==8.3.4
+neo4j==6.4.0
+python-dotenv==1.1.0
+pinecone==10.0.0
+httpx==0.28.1
+msgspec==0.21.1
+# Optional at runtime; explicit evaluation trace uploads when configured.
+langsmith==0.14.11
+# Deterministic synthetic PDF creation and strict local parsing.
+reportlab==4.5.1
+pypdf==5.8.0
+PyMuPDF==1.26.3
+# Local typed API for the React dashboard.
+fastapi==0.143.3
+uvicorn==0.54.0

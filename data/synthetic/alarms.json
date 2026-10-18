@@ -1,0 +1,162 @@
+[
+  {
+    "alarm_id": "SYN-ALARM-001",
+    "code": "SYN-ALM-001",
+    "description": "Synthetic alarm: container not detected.",
+    "equipment_id": "SYN-EQ-001",
+    "failure_mode_id": "SYN-FM-001",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-002",
+    "code": "SYN-ALM-002",
+    "description": "Synthetic alarm: container position inconsistent.",
+    "equipment_id": "SYN-EQ-001",
+    "failure_mode_id": "SYN-FM-002",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-003",
+    "code": "SYN-ALM-003",
+    "description": "Synthetic alarm: transfer timing inconsistent.",
+    "equipment_id": "SYN-EQ-002",
+    "failure_mode_id": "SYN-FM-003",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-004",
+    "code": "SYN-ALM-004",
+    "description": "Synthetic alarm: cap presentation inconsistent.",
+    "equipment_id": "SYN-EQ-002",
+    "failure_mode_id": "SYN-FM-004",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-005",
+    "code": "SYN-ALM-005",
+    "description": "Synthetic alarm: label position inconsistent.",
+    "equipment_id": "SYN-EQ-003",
+    "failure_mode_id": "SYN-FM-005",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-006",
+    "code": "SYN-ALM-006",
+    "description": "Synthetic alarm: carton presence intermittent.",
+    "equipment_id": "SYN-EQ-003",
+    "failure_mode_id": "SYN-FM-006",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-007",
+    "code": "SYN-ALM-007",
+    "description": "Synthetic alarm: reject confirmation absent.",
+    "equipment_id": "SYN-EQ-004",
+    "failure_mode_id": "SYN-FM-007",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-008",
+    "code": "SYN-ALM-008",
+    "description": "Synthetic alarm: print position inconsistent.",
+    "equipment_id": "SYN-EQ-004",
+    "failure_mode_id": "SYN-FM-008",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-009",
+    "code": "SYN-ALM-009",
+    "description": "Synthetic alarm: transfer position drifting.",
+    "equipment_id": "SYN-EQ-005",
+    "failure_mode_id": "SYN-FM-009",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-010",
+    "code": "SYN-ALM-010",
+    "description": "Synthetic alarm: foil position inconsistent.",
+    "equipment_id": "SYN-EQ-005",
+    "failure_mode_id": "SYN-FM-010",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-011",
+    "code": "SYN-ALM-011",
+    "description": "Synthetic alarm: simulated fill target mismatch.",
+    "equipment_id": "SYN-EQ-006",
+    "failure_mode_id": "SYN-FM-011",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-012",
+    "code": "SYN-ALM-012",
+    "description": "Synthetic alarm: simulated checkweight disagreement.",
+    "equipment_id": "SYN-EQ-006",
+    "failure_mode_id": "SYN-FM-012",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-013",
+    "code": "SYN-ALM-013",
+    "description": "Synthetic alarm: leaflet presence intermittent.",
+    "equipment_id": "SYN-EQ-007",
+    "failure_mode_id": "SYN-FM-013",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-014",
+    "code": "SYN-ALM-014",
+    "description": "Synthetic alarm: case position inconsistent.",
+    "equipment_id": "SYN-EQ-007",
+    "failure_mode_id": "SYN-FM-014",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-015",
+    "code": "SYN-ALM-015",
+    "description": "Synthetic alarm: simulated count disagreement.",
+    "equipment_id": "SYN-EQ-008",
+    "failure_mode_id": "SYN-FM-015",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-016",
+    "code": "SYN-ALM-016",
+    "description": "Synthetic alarm: container not detected.",
+    "equipment_id": "SYN-EQ-008",
+    "failure_mode_id": "SYN-FM-001",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-017",
+    "code": "SYN-ALM-017",
+    "description": "Synthetic alarm: container position inconsistent.",
+    "equipment_id": "SYN-EQ-009",
+    "failure_mode_id": "SYN-FM-002",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-018",
+    "code": "SYN-ALM-018",
+    "description": "Synthetic alarm: transfer timing inconsistent.",
+    "equipment_id": "SYN-EQ-009",
+    "failure_mode_id": "SYN-FM-003",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-019",
+    "code": "SYN-ALM-019",
+    "description": "Synthetic alarm: cap presentation inconsistent.",
+    "equipment_id": "SYN-EQ-010",
+    "failure_mode_id": "SYN-FM-004",
+    "synthetic": true
+  },
+  {
+    "alarm_id": "SYN-ALARM-020",
+    "code": "SYN-ALM-020",
+    "description": "Synthetic alarm: label position inconsistent.",
+    "equipment_id": "SYN-EQ-010",
+    "failure_mode_id": "SYN-FM-005",
+    "synthetic": true
+  }
+]

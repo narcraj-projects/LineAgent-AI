@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "dataset_sha256": "aec35320c7a31a43a25164d635884ad6a2b6b03d6ff0411b144559a3944d7205",
+  "files": [
+    {
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "sha256": "ba6e27e41e0eee977fa4de8466156a5ffc274dc8805ef8486ce5a6ef50b91fea",
+      "pages": 18
+    },
+    {
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "sha256": "38322a79bd6634447a244a01a5e9107fede32b21a15719e75f5c83d1dd74b30e",
+      "pages": 12
+    }
+  ],
+  "citations": [
+    {
+      "section_id": "SYN-SEC-001",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 1,
+      "source_doc": "SYN-DOC-001",
+      "source_version": "1.0",
+      "logical_page": 1
+    },
+    {
+      "section_id": "SYN-SEC-002",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 2,
+      "source_doc": "SYN-DOC-001",
+      "source_version": "1.0",
+      "logical_page": 2
+    },
+    {
+      "section_id": "SYN-SEC-003",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 3,
+      "source_doc": "SYN-DOC-001",
+      "source_version": "1.0",
+      "logical_page": 3
+    },
+    {
+      "section_id": "SYN-SEC-004",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 4,
+      "source_doc": "SYN-DOC-001",
+      "source_version": "1.0",
+      "logical_page": 4
+    },
+    {
+      "section_id": "SYN-SEC-005",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 5,
+      "source_doc": "SYN-DOC-001",
+      "source_version": "1.0",
+      "logical_page": 5
+    },
+    {
+      "section_id": "SYN-SEC-006",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 6,
+      "source_doc": "SYN-DOC-001",
+      "source_version": "1.0",
+      "logical_page": 6
+    },
+    {
+      "section_id": "SYN-SEC-007",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 7,
+      "source_doc": "SYN-DOC-002",
+      "source_version": "1.0",
+      "logical_page": 1
+    },
+    {
+      "section_id": "SYN-SEC-008",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 8,
+      "source_doc": "SYN-DOC-002",
+      "source_version": "1.0",
+      "logical_page": 2
+    },
+    {
+      "section_id": "SYN-SEC-009",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 9,
+      "source_doc": "SYN-DOC-002",
+      "source_version": "1.0",
+      "logical_page": 3
+    },
+    {
+      "section_id": "SYN-SEC-010",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 10,
+      "source_doc": "SYN-DOC-002",
+      "source_version": "1.0",
+      "logical_page": 4
+    },
+    {
+      "section_id": "SYN-SEC-011",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 11,
+      "source_doc": "SYN-DOC-002",
+      "source_version": "1.0",
+      "logical_page": 5
+    },
+    {
+      "section_id": "SYN-SEC-012",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 12,
+      "source_doc": "SYN-DOC-002",
+      "source_version": "1.0",
+      "logical_page": 6
+    },
+    {
+      "section_id": "SYN-SEC-013",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 13,
+      "source_doc": "SYN-DOC-003",
+      "source_version": "1.0",
+      "logical_page": 1
+    },
+    {
+      "section_id": "SYN-SEC-014",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 14,
+      "source_doc": "SYN-DOC-003",
+      "source_version": "1.0",
+      "logical_page": 2
+    },
+    {
+      "section_id": "SYN-SEC-015",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 15,
+      "source_doc": "SYN-DOC-003",
+      "source_version": "1.0",
+      "logical_page": 3
+    },
+    {
+      "section_id": "SYN-SEC-016",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 16,
+      "source_doc": "SYN-DOC-003",
+      "source_version": "1.0",
+      "logical_page": 4
+    },
+    {
+      "section_id": "SYN-SEC-017",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 17,
+      "source_doc": "SYN-DOC-003",
+      "source_version": "1.0",
+      "logical_page": 5
+    },
+    {
+      "section_id": "SYN-SEC-018",
+      "filename": "linemedic-synthetic-manual-1.pdf",
+      "pdf_page": 18,
+      "source_doc": "SYN-DOC-003",
+      "source_version": "1.0",
+      "logical_page": 6
+    },
+    {
+      "section_id": "SYN-SEC-019",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 1,
+      "source_doc": "SYN-DOC-004",
+      "source_version": "1.0",
+      "logical_page": 1
+    },
+    {
+      "section_id": "SYN-SEC-020",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 2,
+      "source_doc": "SYN-DOC-004",
+      "source_version": "1.0",
+      "logical_page": 2
+    },
+    {
+      "section_id": "SYN-SEC-021",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 3,
+      "source_doc": "SYN-DOC-004",
+      "source_version": "1.0",
+      "logical_page": 3
+    },
+    {
+      "section_id": "SYN-SEC-022",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 4,
+      "source_doc": "SYN-DOC-004",
+      "source_version": "1.0",
+      "logical_page": 4
+    },
+    {
+      "section_id": "SYN-SEC-023",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 5,
+      "source_doc": "SYN-DOC-004",
+      "source_version": "1.0",
+      "logical_page": 5
+    },
+    {
+      "section_id": "SYN-SEC-024",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 6,
+      "source_doc": "SYN-DOC-004",
+      "source_version": "1.0",
+      "logical_page": 6
+    },
+    {
+      "section_id": "SYN-SEC-025",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 7,
+      "source_doc": "SYN-DOC-005",
+      "source_version": "1.0",
+      "logical_page": 1
+    },
+    {
+      "section_id": "SYN-SEC-026",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 8,
+      "source_doc": "SYN-DOC-005",
+      "source_version": "1.0",
+      "logical_page": 2
+    },
+    {
+      "section_id": "SYN-SEC-027",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 9,
+      "source_doc": "SYN-DOC-005",
+      "source_version": "1.0",
+      "logical_page": 3
+    },
+    {
+      "section_id": "SYN-SEC-028",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 10,
+      "source_doc": "SYN-DOC-005",
+      "source_version": "1.0",
+      "logical_page": 4
+    },
+    {
+      "section_id": "SYN-SEC-029",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 11,
+      "source_doc": "SYN-DOC-005",
+      "source_version": "1.0",
+      "logical_page": 5
+    },
+    {
+      "section_id": "SYN-SEC-030",
+      "filename": "linemedic-synthetic-manual-2.pdf",
+      "pdf_page": 12,
+      "source_doc": "SYN-DOC-005",
+      "source_version": "1.0",
+      "logical_page": 6
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+[
+  {
+    "equipment_ids": [
+      "SYN-EQ-001",
+      "SYN-EQ-008"
+    ],
+    "failure_mode_id": "SYN-FM-001",
+    "fix_ids": [
+      "SYN-FIX-001"
+    ],
+    "heading": "photoeye offset: cause",
+    "page": 1,
+    "section_id": "SYN-SEC-001",
+    "source_doc": "SYN-DOC-001",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-001: Fictional fault: container not detected. The seeded simulator correction is SYN-FIX-001 (Simulator correction: photoeye offset), using SYN-PART-001. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-001",
+      "SYN-EQ-008"
+    ],
+    "failure_mode_id": "SYN-FM-001",
+    "fix_ids": [
+      "SYN-FIX-001",
+      "SYN-FIX-016"
+    ],
+    "heading": "photoeye offset: contrast",
+    "page": 2,
+    "section_id": "SYN-SEC-002",
+    "source_doc": "SYN-DOC-001",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-001: Fictional fault: container not detected. The seeded simulator correction is SYN-FIX-001 (Simulator correction: photoeye offset), using SYN-PART-001. SYN-FIX-016 (Simulator alternate-cause check: carton sensor alignment) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-001",
+      "SYN-EQ-009"
+    ],
+    "failure_mode_id": "SYN-FM-002",
+    "fix_ids": [
+      "SYN-FIX-002"
+    ],
+    "heading": "guide spacing drift: cause",
+    "page": 3,
+    "section_id": "SYN-SEC-003",
+    "source_doc": "SYN-DOC-001",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-002: Fictional fault: container position inconsistent. The seeded simulator correction is SYN-FIX-002 (Simulator correction: guide spacing drift), using SYN-PART-002. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-001",
+      "SYN-EQ-009"
+    ],
+    "failure_mode_id": "SYN-FM-002",
+    "fix_ids": [
+      "SYN-FIX-002",
+      "SYN-FIX-017"
+    ],
+    "heading": "guide spacing drift: contrast",
+    "page": 4,
+    "section_id": "SYN-SEC-004",
+    "source_doc": "SYN-DOC-001",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-002: Fictional fault: container position inconsistent. The seeded simulator correction is SYN-FIX-002 (Simulator correction: guide spacing drift), using SYN-PART-002. SYN-FIX-017 (Simulator alternate-cause check: reject confirmation mismatch) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-002",
+      "SYN-EQ-009"
+    ],
+    "failure_mode_id": "SYN-FM-003",
+    "fix_ids": [
+      "SYN-FIX-003"
+    ],
+    "heading": "timing recipe mismatch: cause",
+    "page": 5,
+    "section_id": "SYN-SEC-005",
+    "source_doc": "SYN-DOC-001",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-003: Fictional fault: transfer timing inconsistent. The seeded simulator correction is SYN-FIX-003 (Simulator correction: timing recipe mismatch), using SYN-PART-003. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-002",
+      "SYN-EQ-009"
+    ],
+    "failure_mode_id": "SYN-FM-003",
+    "fix_ids": [
+      "SYN-FIX-003",
+      "SYN-FIX-018"
+    ],
+    "heading": "timing recipe mismatch: contrast",
+    "page": 6,
+    "section_id": "SYN-SEC-006",
+    "source_doc": "SYN-DOC-001",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-003: Fictional fault: transfer timing inconsistent. The seeded simulator correction is SYN-FIX-003 (Simulator correction: timing recipe mismatch), using SYN-PART-003. SYN-FIX-018 (Simulator alternate-cause check: print reference drift) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-002",
+      "SYN-EQ-010"
+    ],
+    "failure_mode_id": "SYN-FM-004",
+    "fix_ids": [
+      "SYN-FIX-004"
+    ],
+    "heading": "cap feed orientation: cause",
+    "page": 1,
+    "section_id": "SYN-SEC-007",
+    "source_doc": "SYN-DOC-002",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-004: Fictional fault: cap presentation inconsistent. The seeded simulator correction is SYN-FIX-004 (Simulator correction: cap feed orientation), using SYN-PART-004. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-002",
+      "SYN-EQ-010"
+    ],
+    "failure_mode_id": "SYN-FM-004",
+    "fix_ids": [
+      "SYN-FIX-004",
+      "SYN-FIX-019"
+    ],
+    "heading": "cap feed orientation: contrast",
+    "page": 2,
+    "section_id": "SYN-SEC-008",
+    "source_doc": "SYN-DOC-002",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-004: Fictional fault: cap presentation inconsistent. The seeded simulator correction is SYN-FIX-004 (Simulator correction: cap feed orientation), using SYN-PART-004. SYN-FIX-019 (Simulator alternate-cause check: simulated belt tracking) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-003",
+      "SYN-EQ-010"
+    ],
+    "failure_mode_id": "SYN-FM-005",
+    "fix_ids": [
+      "SYN-FIX-005"
+    ],
+    "heading": "label reference offset: cause",
+    "page": 3,
+    "section_id": "SYN-SEC-009",
+    "source_doc": "SYN-DOC-002",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-005: Fictional fault: label position inconsistent. The seeded simulator correction is SYN-FIX-005 (Simulator correction: label reference offset), using SYN-PART-005. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-003",
+      "SYN-EQ-010"
+    ],
+    "failure_mode_id": "SYN-FM-005",
+    "fix_ids": [
+      "SYN-FIX-005",
+      "SYN-FIX-020"
+    ],
+    "heading": "label reference offset: contrast",
+    "page": 4,
+    "section_id": "SYN-SEC-010",
+    "source_doc": "SYN-DOC-002",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-005: Fictional fault: label position inconsistent. The seeded simulator correction is SYN-FIX-005 (Simulator correction: label reference offset), using SYN-PART-005. SYN-FIX-020 (Simulator alternate-cause check: foil presentation mismatch) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-003"
+    ],
+    "failure_mode_id": "SYN-FM-006",
+    "fix_ids": [
+      "SYN-FIX-006"
+    ],
+    "heading": "carton sensor alignment: cause",
+    "page": 5,
+    "section_id": "SYN-SEC-011",
+    "source_doc": "SYN-DOC-002",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-006: Fictional fault: carton presence intermittent. The seeded simulator correction is SYN-FIX-006 (Simulator correction: carton sensor alignment), using SYN-PART-006. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-003"
+    ],
+    "failure_mode_id": "SYN-FM-006",
+    "fix_ids": [
+      "SYN-FIX-006",
+      "SYN-FIX-021"
+    ],
+    "heading": "carton sensor alignment: contrast",
+    "page": 6,
+    "section_id": "SYN-SEC-012",
+    "source_doc": "SYN-DOC-002",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-006: Fictional fault: carton presence intermittent. The seeded simulator correction is SYN-FIX-006 (Simulator correction: carton sensor alignment), using SYN-PART-006. SYN-FIX-021 (Simulator alternate-cause check: virtual fill recipe mismatch) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-004"
+    ],
+    "failure_mode_id": "SYN-FM-007",
+    "fix_ids": [
+      "SYN-FIX-007"
+    ],
+    "heading": "reject confirmation mismatch: cause",
+    "page": 1,
+    "section_id": "SYN-SEC-013",
+    "source_doc": "SYN-DOC-003",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-007: Fictional fault: reject confirmation absent. The seeded simulator correction is SYN-FIX-007 (Simulator correction: reject confirmation mismatch), using SYN-PART-007. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-004"
+    ],
+    "failure_mode_id": "SYN-FM-007",
+    "fix_ids": [
+      "SYN-FIX-007",
+      "SYN-FIX-022"
+    ],
+    "heading": "reject confirmation mismatch: contrast",
+    "page": 2,
+    "section_id": "SYN-SEC-014",
+    "source_doc": "SYN-DOC-003",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-007: Fictional fault: reject confirmation absent. The seeded simulator correction is SYN-FIX-007 (Simulator correction: reject confirmation mismatch), using SYN-PART-007. SYN-FIX-022 (Simulator alternate-cause check: checkweight reference drift) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-004"
+    ],
+    "failure_mode_id": "SYN-FM-008",
+    "fix_ids": [
+      "SYN-FIX-008"
+    ],
+    "heading": "print reference drift: cause",
+    "page": 3,
+    "section_id": "SYN-SEC-015",
+    "source_doc": "SYN-DOC-003",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-008: Fictional fault: print position inconsistent. The seeded simulator correction is SYN-FIX-008 (Simulator correction: print reference drift), using SYN-PART-008. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-004"
+    ],
+    "failure_mode_id": "SYN-FM-008",
+    "fix_ids": [
+      "SYN-FIX-008",
+      "SYN-FIX-023"
+    ],
+    "heading": "print reference drift: contrast",
+    "page": 4,
+    "section_id": "SYN-SEC-016",
+    "source_doc": "SYN-DOC-003",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-008: Fictional fault: print position inconsistent. The seeded simulator correction is SYN-FIX-008 (Simulator correction: print reference drift), using SYN-PART-008. SYN-FIX-023 (Simulator alternate-cause check: leaflet presence alignment) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-005"
+    ],
+    "failure_mode_id": "SYN-FM-009",
+    "fix_ids": [
+      "SYN-FIX-009"
+    ],
+    "heading": "simulated belt tracking: cause",
+    "page": 5,
+    "section_id": "SYN-SEC-017",
+    "source_doc": "SYN-DOC-003",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-009: Fictional fault: transfer position drifting. The seeded simulator correction is SYN-FIX-009 (Simulator correction: simulated belt tracking), using SYN-PART-009. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-005"
+    ],
+    "failure_mode_id": "SYN-FM-009",
+    "fix_ids": [
+      "SYN-FIX-009",
+      "SYN-FIX-024"
+    ],
+    "heading": "simulated belt tracking: contrast",
+    "page": 6,
+    "section_id": "SYN-SEC-018",
+    "source_doc": "SYN-DOC-003",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-009: Fictional fault: transfer position drifting. The seeded simulator correction is SYN-FIX-009 (Simulator correction: simulated belt tracking), using SYN-PART-009. SYN-FIX-024 (Simulator alternate-cause check: case stop reference drift) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-005"
+    ],
+    "failure_mode_id": "SYN-FM-010",
+    "fix_ids": [
+      "SYN-FIX-010"
+    ],
+    "heading": "foil presentation mismatch: cause",
+    "page": 1,
+    "section_id": "SYN-SEC-019",
+    "source_doc": "SYN-DOC-004",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-010: Fictional fault: foil position inconsistent. The seeded simulator correction is SYN-FIX-010 (Simulator correction: foil presentation mismatch), using SYN-PART-010. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-005"
+    ],
+    "failure_mode_id": "SYN-FM-010",
+    "fix_ids": [
+      "SYN-FIX-010",
+      "SYN-FIX-025"
+    ],
+    "heading": "foil presentation mismatch: contrast",
+    "page": 2,
+    "section_id": "SYN-SEC-020",
+    "source_doc": "SYN-DOC-004",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-010: Fictional fault: foil position inconsistent. The seeded simulator correction is SYN-FIX-010 (Simulator correction: foil presentation mismatch), using SYN-PART-010. SYN-FIX-025 (Simulator alternate-cause check: virtual count recipe mismatch) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-006"
+    ],
+    "failure_mode_id": "SYN-FM-011",
+    "fix_ids": [
+      "SYN-FIX-011"
+    ],
+    "heading": "virtual fill recipe mismatch: cause",
+    "page": 3,
+    "section_id": "SYN-SEC-021",
+    "source_doc": "SYN-DOC-004",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-011: Fictional fault: simulated fill target mismatch. The seeded simulator correction is SYN-FIX-011 (Simulator correction: virtual fill recipe mismatch), using SYN-PART-011. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-006"
+    ],
+    "failure_mode_id": "SYN-FM-011",
+    "fix_ids": [
+      "SYN-FIX-011",
+      "SYN-FIX-016"
+    ],
+    "heading": "virtual fill recipe mismatch: contrast",
+    "page": 4,
+    "section_id": "SYN-SEC-022",
+    "source_doc": "SYN-DOC-004",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-011: Fictional fault: simulated fill target mismatch. The seeded simulator correction is SYN-FIX-011 (Simulator correction: virtual fill recipe mismatch), using SYN-PART-011. SYN-FIX-016 (Simulator alternate-cause check: carton sensor alignment) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-006"
+    ],
+    "failure_mode_id": "SYN-FM-012",
+    "fix_ids": [
+      "SYN-FIX-012"
+    ],
+    "heading": "checkweight reference drift: cause",
+    "page": 5,
+    "section_id": "SYN-SEC-023",
+    "source_doc": "SYN-DOC-004",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-012: Fictional fault: simulated checkweight disagreement. The seeded simulator correction is SYN-FIX-012 (Simulator correction: checkweight reference drift), using SYN-PART-012. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-006"
+    ],
+    "failure_mode_id": "SYN-FM-012",
+    "fix_ids": [
+      "SYN-FIX-012",
+      "SYN-FIX-017"
+    ],
+    "heading": "checkweight reference drift: contrast",
+    "page": 6,
+    "section_id": "SYN-SEC-024",
+    "source_doc": "SYN-DOC-004",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-012: Fictional fault: simulated checkweight disagreement. The seeded simulator correction is SYN-FIX-012 (Simulator correction: checkweight reference drift), using SYN-PART-012. SYN-FIX-017 (Simulator alternate-cause check: reject confirmation mismatch) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-007"
+    ],
+    "failure_mode_id": "SYN-FM-013",
+    "fix_ids": [
+      "SYN-FIX-013"
+    ],
+    "heading": "leaflet presence alignment: cause",
+    "page": 1,
+    "section_id": "SYN-SEC-025",
+    "source_doc": "SYN-DOC-005",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-013: Fictional fault: leaflet presence intermittent. The seeded simulator correction is SYN-FIX-013 (Simulator correction: leaflet presence alignment), using SYN-PART-013. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-007"
+    ],
+    "failure_mode_id": "SYN-FM-013",
+    "fix_ids": [
+      "SYN-FIX-013",
+      "SYN-FIX-018"
+    ],
+    "heading": "leaflet presence alignment: contrast",
+    "page": 2,
+    "section_id": "SYN-SEC-026",
+    "source_doc": "SYN-DOC-005",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-013: Fictional fault: leaflet presence intermittent. The seeded simulator correction is SYN-FIX-013 (Simulator correction: leaflet presence alignment), using SYN-PART-013. SYN-FIX-018 (Simulator alternate-cause check: print reference drift) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-007"
+    ],
+    "failure_mode_id": "SYN-FM-014",
+    "fix_ids": [
+      "SYN-FIX-014"
+    ],
+    "heading": "case stop reference drift: cause",
+    "page": 3,
+    "section_id": "SYN-SEC-027",
+    "source_doc": "SYN-DOC-005",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-014: Fictional fault: case position inconsistent. The seeded simulator correction is SYN-FIX-014 (Simulator correction: case stop reference drift), using SYN-PART-014. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-007"
+    ],
+    "failure_mode_id": "SYN-FM-014",
+    "fix_ids": [
+      "SYN-FIX-014",
+      "SYN-FIX-019"
+    ],
+    "heading": "case stop reference drift: contrast",
+    "page": 4,
+    "section_id": "SYN-SEC-028",
+    "source_doc": "SYN-DOC-005",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-014: Fictional fault: case position inconsistent. The seeded simulator correction is SYN-FIX-014 (Simulator correction: case stop reference drift), using SYN-PART-014. SYN-FIX-019 (Simulator alternate-cause check: simulated belt tracking) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-008"
+    ],
+    "failure_mode_id": "SYN-FM-015",
+    "fix_ids": [
+      "SYN-FIX-015"
+    ],
+    "heading": "virtual count recipe mismatch: cause",
+    "page": 5,
+    "section_id": "SYN-SEC-029",
+    "source_doc": "SYN-DOC-005",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-015: Fictional fault: simulated count disagreement. The seeded simulator correction is SYN-FIX-015 (Simulator correction: virtual count recipe mismatch), using SYN-PART-015. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  },
+  {
+    "equipment_ids": [
+      "SYN-EQ-008"
+    ],
+    "failure_mode_id": "SYN-FM-015",
+    "fix_ids": [
+      "SYN-FIX-015",
+      "SYN-FIX-020"
+    ],
+    "heading": "virtual count recipe mismatch: contrast",
+    "page": 6,
+    "section_id": "SYN-SEC-030",
+    "source_doc": "SYN-DOC-005",
+    "source_version": "1.0",
+    "synthetic": true,
+    "text": "Fictional training evidence for SYN-FM-015: Fictional fault: simulated count disagreement. The seeded simulator correction is SYN-FIX-015 (Simulator correction: virtual count recipe mismatch), using SYN-PART-015. SYN-FIX-020 (Simulator alternate-cause check: foil presentation mismatch) is a plausible symptom-overlap decoy; it does not resolve this seeded cause. Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review."
+  }
+]

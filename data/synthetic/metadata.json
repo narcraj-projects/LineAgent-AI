@@ -1,0 +1,63 @@
+{
+  "demo_identities": [
+    {
+      "actor_id": "SYN-ACTOR-001",
+      "display_name": "Synthetic demo operator",
+      "role": "operator",
+      "synthetic": true
+    },
+    {
+      "actor_id": "SYN-ACTOR-002",
+      "display_name": "Synthetic demo technician",
+      "role": "technician",
+      "synthetic": true
+    },
+    {
+      "actor_id": "SYN-ACTOR-003",
+      "display_name": "Synthetic demo supervisor",
+      "role": "supervisor",
+      "synthetic": true
+    }
+  ],
+  "documents": [
+    {
+      "doc_id": "SYN-DOC-001",
+      "page_count": 6,
+      "synthetic": true,
+      "title": "Fictional LineMedic simulator handbook 1",
+      "version": "1.0"
+    },
+    {
+      "doc_id": "SYN-DOC-002",
+      "page_count": 6,
+      "synthetic": true,
+      "title": "Fictional LineMedic simulator handbook 2",
+      "version": "1.0"
+    },
+    {
+      "doc_id": "SYN-DOC-003",
+      "page_count": 6,
+      "synthetic": true,
+      "title": "Fictional LineMedic simulator handbook 3",
+      "version": "1.0"
+    },
+    {
+      "doc_id": "SYN-DOC-004",
+      "page_count": 6,
+      "synthetic": true,
+      "title": "Fictional LineMedic simulator handbook 4",
+      "version": "1.0"
+    },
+    {
+      "doc_id": "SYN-DOC-005",
+      "page_count": 6,
+      "synthetic": true,
+      "title": "Fictional LineMedic simulator handbook 5",
+      "version": "1.0"
+    }
+  ],
+  "notice": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+  "schema_version": "1.0",
+  "seed": 20261018,
+  "synthetic": true
+}

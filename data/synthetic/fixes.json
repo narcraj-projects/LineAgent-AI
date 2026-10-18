@@ -1,0 +1,327 @@
+[
+  {
+    "fix_id": "SYN-FIX-001",
+    "part_numbers": [
+      "SYN-PART-001"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: photoeye offset'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: photoeye offset"
+  },
+  {
+    "fix_id": "SYN-FIX-002",
+    "part_numbers": [
+      "SYN-PART-002"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: guide spacing drift'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: guide spacing drift"
+  },
+  {
+    "fix_id": "SYN-FIX-003",
+    "part_numbers": [
+      "SYN-PART-003"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: timing recipe mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: timing recipe mismatch"
+  },
+  {
+    "fix_id": "SYN-FIX-004",
+    "part_numbers": [
+      "SYN-PART-004"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: cap feed orientation'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: cap feed orientation"
+  },
+  {
+    "fix_id": "SYN-FIX-005",
+    "part_numbers": [
+      "SYN-PART-005"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: label reference offset'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: label reference offset"
+  },
+  {
+    "fix_id": "SYN-FIX-006",
+    "part_numbers": [
+      "SYN-PART-006"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: carton sensor alignment'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: carton sensor alignment"
+  },
+  {
+    "fix_id": "SYN-FIX-007",
+    "part_numbers": [
+      "SYN-PART-007"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: reject confirmation mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: reject confirmation mismatch"
+  },
+  {
+    "fix_id": "SYN-FIX-008",
+    "part_numbers": [
+      "SYN-PART-008"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: print reference drift'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: print reference drift"
+  },
+  {
+    "fix_id": "SYN-FIX-009",
+    "part_numbers": [
+      "SYN-PART-009"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: simulated belt tracking'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: simulated belt tracking"
+  },
+  {
+    "fix_id": "SYN-FIX-010",
+    "part_numbers": [
+      "SYN-PART-010"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: foil presentation mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: foil presentation mismatch"
+  },
+  {
+    "fix_id": "SYN-FIX-011",
+    "part_numbers": [
+      "SYN-PART-011"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: virtual fill recipe mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: virtual fill recipe mismatch"
+  },
+  {
+    "fix_id": "SYN-FIX-012",
+    "part_numbers": [
+      "SYN-PART-012"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: checkweight reference drift'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: checkweight reference drift"
+  },
+  {
+    "fix_id": "SYN-FIX-013",
+    "part_numbers": [
+      "SYN-PART-013"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: leaflet presence alignment'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: leaflet presence alignment"
+  },
+  {
+    "fix_id": "SYN-FIX-014",
+    "part_numbers": [
+      "SYN-PART-014"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: case stop reference drift'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: case stop reference drift"
+  },
+  {
+    "fix_id": "SYN-FIX-015",
+    "part_numbers": [
+      "SYN-PART-015"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator correction: virtual count recipe mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator correction: virtual count recipe mismatch"
+  },
+  {
+    "fix_id": "SYN-FIX-016",
+    "part_numbers": [
+      "SYN-PART-016"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: carton sensor alignment'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: carton sensor alignment"
+  },
+  {
+    "fix_id": "SYN-FIX-017",
+    "part_numbers": [
+      "SYN-PART-017"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: reject confirmation mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: reject confirmation mismatch"
+  },
+  {
+    "fix_id": "SYN-FIX-018",
+    "part_numbers": [
+      "SYN-PART-018"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: print reference drift'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: print reference drift"
+  },
+  {
+    "fix_id": "SYN-FIX-019",
+    "part_numbers": [
+      "SYN-PART-019"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: simulated belt tracking'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: simulated belt tracking"
+  },
+  {
+    "fix_id": "SYN-FIX-020",
+    "part_numbers": [
+      "SYN-PART-020"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: foil presentation mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: foil presentation mismatch"
+  },
+  {
+    "fix_id": "SYN-FIX-021",
+    "part_numbers": [
+      "SYN-PART-001"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: virtual fill recipe mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: virtual fill recipe mismatch"
+  },
+  {
+    "fix_id": "SYN-FIX-022",
+    "part_numbers": [
+      "SYN-PART-002"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: checkweight reference drift'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: checkweight reference drift"
+  },
+  {
+    "fix_id": "SYN-FIX-023",
+    "part_numbers": [
+      "SYN-PART-003"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: leaflet presence alignment'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: leaflet presence alignment"
+  },
+  {
+    "fix_id": "SYN-FIX-024",
+    "part_numbers": [
+      "SYN-PART-004"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: case stop reference drift'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: case stop reference drift"
+  },
+  {
+    "fix_id": "SYN-FIX-025",
+    "part_numbers": [
+      "SYN-PART-005"
+    ],
+    "safety_note": "Synthetic simulator only; no real maintenance authorization. Follow site-approved procedures and qualified review.",
+    "steps": [
+      "Review the fictional evidence with a qualified technician.",
+      "In the simulator only, select 'Simulator alternate-cause check: virtual count recipe mismatch'. Record the simulated outcome; do not act on real equipment."
+    ],
+    "synthetic": true,
+    "title": "Simulator alternate-cause check: virtual count recipe mismatch"
+  }
+]

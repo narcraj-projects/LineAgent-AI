@@ -1,0 +1,17 @@
+[
+  {
+    "line_id": "SYN-LINE-001",
+    "product": "Fictional demo product 1",
+    "synthetic": true
+  },
+  {
+    "line_id": "SYN-LINE-002",
+    "product": "Fictional demo product 2",
+    "synthetic": true
+  },
+  {
+    "line_id": "SYN-LINE-003",
+    "product": "Fictional demo product 3",
+    "synthetic": true
+  }
+]
