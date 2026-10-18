@@ -4,6 +4,8 @@ from collections.abc import AsyncIterator, Awaitable, Callable
 from contextlib import asynccontextmanager
 import hashlib
 import json
+import os
+import re
 from pathlib import Path
 from threading import RLock
 
@@ -13,7 +15,7 @@ from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from starlette.middleware.trustedhost import TrustedHostMiddleware
 
-from src.api_models import (Catalog, ConnectionRequest, DiagnosisInput, DiagnosisOutput, EvaluationMode,
+from src.api_models import (Catalog, ConfigurationStatus, ConnectionRequest, DiagnosisInput, DiagnosisOutput, EvaluationMode,
     EvaluationOutput, FeedbackPreparation, FeedbackSubmission, ServiceStatus, SupervisorAction, SyncOutput)
 from src.application import Application, create_application
 from src.adapters.pdf_manuals import SyntheticPDFAdapter
@@ -135,6 +137,24 @@ def create_api(factory: Factory = live_factory, root: Path = ROOT) -> FastAPI:
     @server.get('/api/health')
     def health() -> dict[str, str]:
         return {'status': 'ok', 'scope': 'HTTP process only; provider readiness requires connection'}
+
+    @server.get('/api/configuration')
+    def configuration() -> ConfigurationStatus:
+        from dotenv import dotenv_values
+
+        path = root / '.env'
+        local = dotenv_values(path, interpolate=False) if path.is_file() else {}
+        names = ('FIREWORKS_API_KEY', 'FIREWORKS_MODEL', 'FIREWORKS_EMBEDDING_MODEL',
+                 'PINECONE_API_KEY', 'PINECONE_INDEX_NAME', 'SUPABASE_URL',
+                 'SUPABASE_SERVICE_ROLE_KEY', 'NEO4J_URI', 'NEO4J_USERNAME', 'NEO4J_PASSWORD')
+        values = {name: os.environ.get(name, local.get(name)) or '' for name in names}
+        ca = os.environ.get('SSL_CERT_FILE', local.get('SSL_CERT_FILE'))
+        revision = os.environ.get('RAILWAY_GIT_COMMIT_SHA', '')
+        return ConfigurationStatus(required_present={name: bool(value.strip()) for name, value in values.items()},
+            chat_model_format_valid=values['FIREWORKS_MODEL'].startswith('accounts/'),
+            supabase_key_is_publishable=values['SUPABASE_SERVICE_ROLE_KEY'].startswith('sb_publishable_'),
+            custom_ca_file_exists=Path(ca).is_file() if ca else None,
+            source_revision=revision if re.fullmatch('[0-9a-fA-F]{40}', revision) else None)
 
     @server.get("/api/catalog")
     def catalog() -> Catalog:

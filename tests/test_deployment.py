@@ -24,6 +24,7 @@ def test_hosted_health_is_liveness_only_and_application_requires_password(monkey
             response = client.get(path)
             assert response.status_code == 401
             assert response.headers['www-authenticate'].startswith('Basic ')
+        assert client.get('/api/configuration').status_code == 401
         assert client.get('/api/catalog', auth=('fixture', 'wrong')).status_code == 401
         response = client.get('/api/catalog', auth=('fixture', 'synthetic-fixture-password'))
         assert response.status_code == 200 and response.json()['synthetic'] is True
@@ -65,3 +66,24 @@ def test_packaged_evaluation_matches_saved_measurements(tmp_path):
     assert report.status == 'measured' and report.pdf_backed is True
     assert [mode.passed for mode in report.modes] == [15, 30, 30, 30]
     assert all(mode.cost_usd is None for mode in report.modes)
+
+
+def test_configuration_exposes_presence_and_revision_without_values(monkeypatch, tmp_path):
+    monkeypatch.setenv('FIREWORKS_API_KEY', 'synthetic-private-key-do-not-return')
+    monkeypatch.setenv('FIREWORKS_MODEL', 'accounts/fixture/model')
+    monkeypatch.setenv('SUPABASE_SERVICE_ROLE_KEY', 'sb_publishable_fixture')
+    monkeypatch.setenv('SSL_CERT_FILE', str(tmp_path / 'missing.pem'))
+    monkeypatch.setenv('RAILWAY_GIT_COMMIT_SHA', 'a' * 40)
+    with TestClient(create_api(root=tmp_path)) as client:
+        response = client.get('/api/configuration')
+        assert response.status_code == 200
+        body = response.json()
+        assert body['required_present']['FIREWORKS_API_KEY']
+        assert not body['required_present']['PINECONE_API_KEY']
+        assert body['chat_model_format_valid']
+        assert body['supabase_key_is_publishable']
+        assert body['custom_ca_file_exists'] is False
+        assert body['source_revision'] == 'a' * 40
+        assert 'synthetic-private-key' not in response.text
+        assert 'sb_publishable_fixture' not in response.text
+        assert str(tmp_path) not in response.text

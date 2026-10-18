@@ -29,6 +29,15 @@ class ServiceStatus(Contract):
     synthetic: Literal[True] = True
 
 
+class ConfigurationStatus(Contract):
+    required_present: dict[str, bool]
+    chat_model_format_valid: bool
+    supabase_key_is_publishable: bool
+    custom_ca_file_exists: bool | None
+    source_revision: str | None = None
+    scope: Literal['Configuration checks only; no live service verification'] = 'Configuration checks only; no live service verification'
+
+
 class Catalog(Contract):
     synthetic: Literal[True] = True
     snapshot_label: str = "Frozen synthetic catalog; persistence totals require a live connection"

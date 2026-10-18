@@ -28,6 +28,11 @@ Health returns 503 while the domain or demo credentials are missing. Healthy HTT
 status does not prove provider access. The catalog and historical evaluation view
 can work before connection; diagnosis and supervisor history need live services.
 
+After signing in, `/api/configuration` reports required variable presence,
+chat-model format, an accidental publishable Supabase key, custom CA-file existence
+and the Railway source revision when supplied. It never returns credential values
+and does not claim that a configured service has been contacted successfully.
+
 ## Verification after publication
 
 Record the actual HTTPS URL and source commit. Execute these against that URL:
