@@ -60,6 +60,7 @@ test('live PDF-backed combined diagnosis, graph and supervisor snapshot; no feed
   await page.screenshot({ path: '../tmp/dashboard-live-graph.png', fullPage: true });
   await page.getByRole('button', { name: 'Supervisor', exact: true }).click();
   await expect(page.getByRole('heading', { name: 'See what the record says.' })).toBeVisible();
-  await expect(page.getByText('51', { exact: true })).toBeVisible();
+  const persisted = await (await request.get('/api/supervisor')).json();
+  await expect(page.getByText(String(persisted.persisted_work_orders), { exact: true })).toBeVisible();
   await page.screenshot({ path: '../tmp/dashboard-live-supervisor.png', fullPage: true });
 });

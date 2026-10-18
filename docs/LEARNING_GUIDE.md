@@ -252,3 +252,44 @@ application explicitly identifies the fallback and actually uses it.
 
 The next guided session can follow sections 1, 4, 3, 5 and 6 in that order: use the
 app first, inspect one complete request, then test its guarantees.
+
+## 9. Explore the Graph Atlas
+
+1. Build the frontend, start the API, and select **Graph Atlas** in navigation.
+   Before connection, the view shows an empty state. Click **Connect live services**
+   to retrieve configured graph evidence. Read the provider label: `neo4j / live`
+   or explicitly labeled `networkx / fallback`.
+2. Select `SYN-ALM-004`. Click an alarm, failure, fix, part, manual or work-order
+   node to inspect its canonical ID and connected relationships. Enter and Space
+   also select focused nodes. Linked fixes include decoys; a relationship is not
+   a recommendation. Use Investigation for grounded candidate selection.
+3. Select `SYN-FIX-004` to inspect worked outcomes and their recorded denominator.
+   Histories are checked against SQL before display. No observations means unknown;
+   these synthetic rates are not repair efficacy.
+4. Select `SYN-SEC-007`, then **Open verified page**. It opens physical PDF page 7;
+   the inspector separately preserves logical document page 1.
+5. Try **Path view**, **Constellation**, zoom, drag to pan, reset and expand.
+   Search dims nonmatching nodes. The Manuals and Work orders filters hide those
+   node groups. The summary distinguishes the displayed subgraph from full-store
+   counts returned by the graph adapter.
+6. Change the alarm. Old evidence clears while the next graph loads. A SQL audit
+   mismatch produces an explicit error. **Investigate this alarm** transfers the
+   selected alarm to a combined-retrieval form without automatically submitting it.
+
+The atlas endpoint is `GET /api/graph/explore?alarm_code=SYN-ALM-004`.
+It reads graph paths and SQL history; it does not seed or write feedback.
+Its implementation is in `src/graph_explorer.py`, its typed projection in
+`src/explorer_models.py`, and its presentation in `web/src/GraphAtlas.tsx`.
+
+For real local browser verification after starting the rebuilt API:
+
+```powershell
+$env:LINEMEDIC_TEST_URL = 'http://127.0.0.1:8765'
+$env:LINEMEDIC_LIVE_BROWSER = '1'
+npm.cmd --prefix web run test:e2e
+```
+
+This opts into configured external providers and may incur usage. The browser
+suite reads persisted history without submitting feedback. Omitting live opt-in
+skips the two live cases; skips are not successful provider checks. Local browser
+results do not establish deployment of the atlas.

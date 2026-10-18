@@ -1,6 +1,6 @@
 export type Role = 'operator' | 'technician' | 'supervisor';
 export type Mode = 'auto' | 'dense' | 'hybrid' | 'graph' | 'combined';
-export type View = 'workspace' | 'manuals' | 'evaluation' | 'supervisor';
+export type View = 'workspace' | 'graph' | 'manuals' | 'evaluation' | 'supervisor';
 export interface Alarm { alarm_id: string; code: string; description: string; equipment_id: string; failure_mode_id: string }
 export interface Equipment { equipment_id: string; equipment_type: string; line_id: string }
 export interface Manual { section_id: string; source_doc: string; source_version: string; page: number; heading: string; text: string }
@@ -19,3 +19,7 @@ export interface Receipt { event: FeedbackEvent; sync_state: 'pending' | 'synced
 export interface SupervisorReport { persisted_work_orders: number; pending_events: Receipt[]; histories: { equipment_id: string; fix_id: string; outcomes: Outcome }[] }
 export interface EvaluationMode { mode: string; attempted: number; skipped: number; passed: number; top1_correct: number; top1_n: number; citation_correct: number; citation_n: number; refusals_correct: number; refusals_n: number; recall_at_5: number | null; p50_ms: number | null; p95_ms: number | null; english_p95_ms: number | null; failed_ids: string[]; cost_usd: number | null }
 export interface Evaluation { status: 'measured' | 'not_run'; run_id: string | null; started_at: string | null; pdf_backed: boolean; modes: EvaluationMode[] }
+export type NodeKind = 'equipment' | 'alarm' | 'failure' | 'fix' | 'part' | 'manual' | 'work_order';
+export interface ExplorerNode { id: string; kind: NodeKind; title: string; description: string; outcomes: Outcome | null; outcome: 'worked' | 'did_not_work' | null; citation: Citation | null }
+export interface ExplorerEdge { id: string; source: string; target: string; relationship: string }
+export interface ExplorerGraph { synthetic: true; status: { provider: 'neo4j' | 'networkx'; mode: 'live' | 'fallback'; reason: string }; alarm_code: string; equipment_id: string; store_counts: { nodes: number; relationships: number }; path_count: number; nodes: ExplorerNode[]; edges: ExplorerEdge[]; history_audited_against_sql: true; notice: string }

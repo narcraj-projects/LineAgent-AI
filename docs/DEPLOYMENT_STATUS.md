@@ -1,5 +1,24 @@
 # Deployment status
 
+## Later hosted verification and local continuation
+
+The later retained smoke report at
+`evals/results/railway-deployed-smoke-20261018/REPORT.md` supersedes the source
+preparation status below. It records the actual Railway URL
+<https://lineagnet-ai-production.up.railway.app> running commit
+`0c22e563978b935631ad8b1f825a88a1ba82026d`, with all five hosted checks passing:
+seeded alarm, unsupported alarm, exact part lookup, feedback persistence and
+supervisor evaluation view. Neo4j was live. Feedback was verified through a fresh
+SQL client and application disconnect/reconnect, not a container restart.
+These are retained observations from the earlier run, not new deployed checks.
+Actual dollar costs remain unknown.
+
+The subsequent Graph Atlas changes are verified locally and remain uncommitted
+and undeployed. Hosted atlas checks are **NOT_RUN**. See
+[Graph Atlas verification](GRAPH_ATLAS_VERIFICATION.md) for the current checks.
+
+## Historical source preparation record
+
 Status on 18 October 2026: **Railway source preparation complete; hosted deployment unverified.**
 
 The repository includes a multi-stage Docker build, Railway configuration, an exact

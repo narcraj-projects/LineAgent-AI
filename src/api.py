@@ -9,7 +9,7 @@ import re
 from pathlib import Path
 from threading import RLock
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException, Request, Query
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import FileResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
@@ -22,6 +22,8 @@ from src.adapters.pdf_manuals import SyntheticPDFAdapter
 from src.adapters.pdf_preview import render_verified_page
 from src.feedback_models import FeedbackEvent, FeedbackReceipt, SupervisorReport
 from src.deployment import load_deployment_settings
+from src.explorer_models import ExplorerGraph
+from src.graph_explorer import explore_graph
 from src.retrieval.corpus import load_dataset
 from src.retrieval.pdf_metadata import build_pdf_metadata
 from src.schemas import DiagnosisRequest
@@ -218,6 +220,18 @@ def create_api(factory: Factory = live_factory, root: Path = ROOT) -> FastAPI:
     def supervisor() -> SupervisorReport:
         with runtime.lock:
             return runtime.required().supervisor_report()
+
+    @server.get('/api/graph/explore')
+    def graph_explorer(alarm_code: str = Query(default='SYN-ALM-004', pattern=r'^SYN-ALM-[0-9]{3}$')) -> ExplorerGraph:
+        with runtime.lock:
+            application = runtime.required()
+            try:
+                return explore_graph(application.baseline, application.graph, application.store, alarm_code,
+                    application.pdf_dataset.manifest.citations if application.pdf_dataset else ())
+            except LookupError:
+                raise HTTPException(404, 'Unknown synthetic alarm.') from None
+            except Exception:
+                raise HTTPException(503, 'Graph evidence could not be verified against canonical records and SQL.') from None
 
     @server.post("/api/graph/retry")
     def retry_graph(body: SupervisorAction) -> SyncOutput:

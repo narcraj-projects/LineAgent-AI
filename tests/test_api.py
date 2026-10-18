@@ -136,3 +136,58 @@ def test_pdf_preview_renders_the_requested_physical_page(api_context):
     assert seventh.content.startswith(b"\x89PNG\r\n\x1a\n")
     assert first.content != seventh.content
     assert client.get("/api/manuals/linemedic-synthetic-manual-1.pdf/pages/99.png").status_code == 404
+
+
+def test_graph_explorer_requires_connection_and_valid_known_alarm(api_context):
+    client, _, factory = api_context
+    assert client.get('/api/graph/explore').status_code == 503
+    factory.assert_not_called()
+    connect(client)
+    assert client.get('/api/graph/explore?alarm_code=SYN-ALM-999').status_code == 404
+    assert client.get('/api/graph/explore?alarm_code=MATCH%20(n)').status_code == 422
+
+
+def test_graph_explorer_returns_verified_subgraph_and_pdf_provenance_without_seeding(api_context):
+    client, application, _ = api_context
+    connect(client)
+    application.graph.seed = MagicMock(wraps=application.graph.seed)
+    for _ in range(2):
+        response = client.get('/api/graph/explore?alarm_code=SYN-ALM-004')
+        assert response.status_code == 200
+        body = response.json()
+        assert body['status']['provider'] == 'networkx' and body['status']['mode'] == 'fallback'
+        assert body['history_audited_against_sql'] is True
+        ids = {node['id'] for node in body['nodes']}
+        assert all(edge['source'] in ids and edge['target'] in ids for edge in body['edges'])
+        assert len(ids) == len(body['nodes'])
+        manual = next(n for n in body['nodes'] if n['id'] == 'SYN-SEC-007')
+        assert manual['citation']['pdf_page'] == 7 and manual['citation']['logical_page'] == 1
+        fix = next(n for n in body['nodes'] if n['id'] == 'SYN-FIX-004')
+        assert fix['outcomes'] == {'worked':2,'did_not_work':0}
+        assert len(body['nodes']) < body['store_counts']['nodes']
+    application.graph.seed.assert_not_called()
+
+
+def test_graph_explorer_fails_closed_on_graph_sql_disagreement(api_context):
+    client, application, _ = api_context
+    connect(client)
+    paths = application.graph.alarm_paths('SYN-ALM-004')
+    forged = paths[0].model_copy(update={'history': paths[0].history.model_copy(update={'work_orders':()})})
+    application.graph.alarm_paths = MagicMock(return_value=(forged,))
+    response = client.get('/api/graph/explore?alarm_code=SYN-ALM-004')
+    assert response.status_code == 503
+    assert response.json()['detail'] == 'Graph evidence could not be verified against canonical records and SQL.'
+
+
+def test_graph_explorer_includes_failed_feedback_once_with_current_counts(api_context):
+    client, application, _ = api_context
+    connect(client)
+    event = application.new_observation('SYN-ALM-004','SYN-FIX-004','SYN-ACTOR-002','did_not_work')
+    application.submit_feedback(event)
+    application.submit_feedback(event)
+    body = client.get('/api/graph/explore?alarm_code=SYN-ALM-004').json()
+    observed = next(n for n in body['nodes'] if n['id'] == event.work_order.work_order_id)
+    assert observed['outcome'] == 'did_not_work'
+    fix = next(n for n in body['nodes'] if n['id'] == 'SYN-FIX-004')
+    assert fix['outcomes'] == {'worked':2,'did_not_work':1}
+    assert sum(n['id'] == event.work_order.work_order_id for n in body['nodes']) == 1

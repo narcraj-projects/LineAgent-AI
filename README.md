@@ -14,6 +14,7 @@ can support traceable answers, recorded outcomes and comparative RAG evaluation.
 - Deterministic routing to exact SQL, dense, hybrid, graph or combined retrieval.
 - Fireworks structured explanations checked against retrieved fix, part and source IDs.
 - Neo4j relationship retrieval with an explicitly labeled NetworkX fallback.
+- Interactive Graph Atlas with SQL-audited history, exact PDF links and investigation handoff.
 - Supabase feedback transactions, idempotent event handling and a durable graph outbox.
 - Two synthetic PDF compilations, real text extraction, section chunking and physical-page citations.
 - Frozen 30-question evaluation across four retrieval modes, with raw results and optional LangSmith traces.
@@ -227,3 +228,8 @@ establish real-world safety or language fluency.
 Deployment status, blockers and smoke-test outcomes are recorded separately in
 [`docs/DEPLOYMENT_STATUS.md`](docs/DEPLOYMENT_STATUS.md). A successful local build
 or GitHub push is not a successful hosted deployment.
+
+The Graph Atlas continuation passed 324 Python tests (20 skipped), 10 React tests,
+the frontend build and four local Edge browser cases, including live Neo4j reads.
+See [the atlas walkthrough](docs/LEARNING_GUIDE.md#9-explore-the-graph-atlas) and
+[verification record](docs/GRAPH_ATLAS_VERIFICATION.md). This extension is not yet deployed.

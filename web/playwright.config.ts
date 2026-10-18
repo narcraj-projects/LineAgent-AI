@@ -4,6 +4,6 @@ export default defineConfig({
   testDir: './e2e', workers: 1, timeout: 120_000,
   outputDir: '../tmp/playwright',
   reporter: [['list'], ['json', { outputFile: '../evals/results/react-browser-tests.json' }]],
-  use: { baseURL: 'http://127.0.0.1:8765', channel: 'msedge', headless: true,
+  use: { baseURL: process.env.LINEMEDIC_TEST_URL || 'http://127.0.0.1:8765', channel: 'msedge', headless: true,
     viewport: { width: 1440, height: 1100 }, trace: 'retain-on-failure' },
 });
